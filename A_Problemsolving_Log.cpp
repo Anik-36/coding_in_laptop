@@ -12,7 +12,7 @@ int main(){
         cin>>n;
         char s[n+1];
         int ct = 0;
-        int hsh[n+1] = {0};
+        int hsh[501] = {0};
         for(int i=1; i<=n; i++){
             cin>>s[i];
             hsh[int(s[i])-64]++;
