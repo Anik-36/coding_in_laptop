@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
+#include<stdlib.h>
 #define max 5
 
 int push(int stack[max],int *top, int *data);
@@ -45,7 +46,7 @@ case 1:
     break;
 
      case 4:
-        //exit(0);
+        exit(0);
 
         default: printf("\nWrong Choice!!!! chose between 1 to 4.");
 
