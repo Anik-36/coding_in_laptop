@@ -25,3 +25,18 @@ int main(){
     }
     return 0;
 }
+
+
+
+
+
+// Step 1. Repeat Steps 2 and 3 for K=1 to N-1.
+// Step 2. Set PTR:=1 [Initialize pass pointer PTR]
+// Step 3. Repeat while PTR<=N-K [Execute pass.]
+    //  (a) If DATA[PTR]>DATA[PTR+1], then:
+    // Interchange Data[PTR] and DATA[PTR+1].
+    // [End of IF Structure]
+    //  (b) Set PTR:=PTR+1.
+    // [End of inner loop.]
+    //  [End of Step 1. outer loop.]
+// Step 4. Exit.
