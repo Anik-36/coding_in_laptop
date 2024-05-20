@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 #include<stdlib.h>
-#define max 5
+#define max 50
 int push(int stack[max], int *top, int *data);
 int pop(int stack[max], int *top, int *data);
 int display(int stack[max], int *top, int *data);
