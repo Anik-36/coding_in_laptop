@@ -33,7 +33,8 @@ int main() {
 
   double approx = taylorSeries(x0, x, order);
 
-  cout << "Approximate value of f(" << x << ") using Taylor series of order " << order << " around x0=" << x0 << " is: " << approx << endl;
+  cout << "Approximate value of f(" << x << ") using Taylor series of order ";
+  cout<< order << " around x0=" << x0 << " is: " << approx << endl;
 
   return 0;
 }

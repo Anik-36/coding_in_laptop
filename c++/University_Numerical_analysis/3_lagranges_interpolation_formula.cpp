@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-
 int main() {
     vector<float> x(100), y(100);
     float xp, yp = 0, p;
     int i, j, n;
-
-
     cout << "Enter number of data: ";
     cin >> n;
     cout << "Enter data:\n";
@@ -18,7 +15,6 @@ int main() {
     }
     cout << "Enter interpolation point: ";
     cin >> xp;
-
     for(i = 1; i <= n; i++) {
         p = 1;
         for(j = 1; j <= n; j++) {
@@ -28,8 +24,6 @@ int main() {
         }
         yp = yp + p * y[i];
     }
-
     cout << "Interpolated value at " << xp << " is " << yp << "." << endl;
-
     return 0;
 }

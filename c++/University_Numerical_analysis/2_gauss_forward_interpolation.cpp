@@ -14,7 +14,6 @@ double p_cal(double p, int n) {
     return temp;
 }
 
-
 int fact(int n) {
     int f = 1;
     for (int i = 2; i <= n; ++i) {
@@ -49,10 +48,8 @@ int main() {
         cout << endl;
     }
 
-
     double value = 30;
-
-
+    
     double sum = y[n / 2][0];
     double p = (value - x[n / 2]) / (x[1] - x[0]);
 

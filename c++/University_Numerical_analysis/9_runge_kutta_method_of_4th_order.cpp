@@ -1,5 +1,4 @@
 #include<bits/stdc++.h>
-#define ll long long
 using namespace std;
 #define f(x,y) (x * x) + (y * y)
 int main(){
