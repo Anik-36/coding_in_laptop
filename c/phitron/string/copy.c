@@ -5,7 +5,7 @@ int main(){
     char s[] = "hello world" ;
     char s1[10]; // if size is mismatched it cause the buffer overflow.
    
-    //strcpy(s1,s); // it alse can do buffer overflow . better use strncpy()
+    //strcpy(s1,s); // it also can do buffer overflow . better use strncpy()
     strncpy(s1, s , 9); //strncpy( , , number_of_char)
     
     // int i = 0;
