@@ -12,19 +12,31 @@ int main(){
     for(int i = 0 ; i<n; i++){
         cin>>a[i];
     }
+    int mxvalue = a[0], mnvalue = a[0];
     for(int i = 1 ; i<n; i++){
-        bool mn = true, mx = true;
-        for(int j = 0 ; j<i; j++){
-            if(a[j]<=a[i]){
-                mn = false;
-            }
-            if(a[j]>=a[i]){
-                mx = false;
-            }
-        }
-        if(mn == true || mx == true){
+        if(a[i]>mxvalue || a[i]<mnvalue){
             ct++;
         }
+        if(a[i]>mxvalue){
+            mxvalue = a[i];
+        }
+        if(a[i]<mnvalue){
+            mnvalue = a[i];
+        }
+        
+        
+        // bool mn = true, mx = true;
+        // for(int j = 0 ; j<i; j++){
+        //     if(a[j]<=a[i]){
+        //         mn = false;
+        //     }
+        //     if(a[j]>=a[i]){
+        //         mx = false;
+        //     }
+        // }
+        // if(mn == true || mx == true){
+        //     ct++;
+        // }
     }
     cout<<ct<<endl;
 
