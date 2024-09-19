@@ -11,16 +11,16 @@ int main(){
     int b = n+1; 
     n+=1;
     while(n!=0){  
-        for(int i = 0; i<4; i++){
+        for(int i = 0; i<4; i++){ 
             a[i] = n%10;
             n = n/10; 
             if(i>0){ 
-                for(int j = i; j>=1 ; j--){ 
-                    if(a[i] == a[j-1]){ 
+                for(int j = i-1; j>=0 ; j--){ 
+                    if(a[i] == a[j]){ 
                         b = b + 1;
                         n = b;
-                        j=0;
-                        i=0;
+                        j = -1;
+                        i = 0;
                     }
                 }
             }
@@ -28,8 +28,13 @@ int main(){
     }
     cout<<b<<endl;
 }
+ //2029 2030 2031
+
+// 2013 -> 3 -> 1,0,2   1-> 3,0,2   0-> 2,1,3   2-> 0,1,3
 
 // // time complexity : O(n) * 4 * 4 = O(n) = 10^4
+
+
 
 // #include<bits/stdc++.h>
 // #define endl '\n'
@@ -64,3 +69,21 @@ int main(){
 //         }
 //     }
 // }
+
+
+
+// int a = n%10;
+        // n/=10;
+        // int c = n%10;
+        // n/=10;
+        // int d = n%10;
+        // n/=10;
+        // int e = n%10;
+        // n/=10;
+        // if(a==c or a==d or a==e or c==d or c == e or d ==e){
+        //     n = b+1;
+        //     b = b+1;
+        // }else{
+        //     cout<<b<<endl;
+        //     break;
+        // }
