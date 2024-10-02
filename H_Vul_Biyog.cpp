@@ -5,10 +5,15 @@
 #define no cout<<"NO"<<endl;
 using namespace std;
 int main(){
-    string a;
-    cin>>a;
-    if(a[0]<='z'){
-        a[0] = toupper(a[0]);
+    int n , t;
+    cin>>n>>t;
+    while(t--){
+        if((n%10)>0){
+            n = n-1;
+        }else{
+            n= n/10;
+        }
     }
-    cout<<a<<endl;
+    cout<<n<<endl;
+    
 }
