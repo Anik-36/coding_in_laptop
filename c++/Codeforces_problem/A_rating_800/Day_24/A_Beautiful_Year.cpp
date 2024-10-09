@@ -10,7 +10,7 @@ int main(){
     cin>>n; 
     int b = n+1; 
     n+=1;
-    while(n!=0){  
+    while(n){  
         for(int i = 0; i<4; i++){ 
             a[i] = n%10;
             n = n/10; 
@@ -20,7 +20,7 @@ int main(){
                         b = b + 1;
                         n = b;
                         j = -1;
-                        i = 0;
+                        i = -1;
                     }
                 }
             }
