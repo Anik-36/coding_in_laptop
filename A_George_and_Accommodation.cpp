@@ -5,14 +5,15 @@
 #define no cout<<"NO"<<endl;
 using namespace std;
 int main(){
-    int n;
-    int sum = 0;
+    int n, ct = 0;
     cin>>n;
-    int a[n];
-    for(int i = 0 ; i<n; i++){
-        cin>>a[i];
-        sum+=a[i];
+    while(n--){
+        int a , b;
+        cin>>a>>b;
+        int dif = b -a;
+        if(dif>=2){
+            ct++;
+        }
     }
-    if(sum==0) cout<<"EASY"<<endl;
-    else cout<<"HARD"<<endl;
+    cout<<ct<<endl;
 }
