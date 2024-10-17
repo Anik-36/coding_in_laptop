@@ -11,6 +11,10 @@ int main(){
         string a,b;
         cin>>a>>b;
         int ok = 0;
+        int sa = a.size();
+        int ba = b.size();
+        int da = sa - ba;
+        a.erase(0,da);
         if(a>=b){
             for(int i = b.size()-1; i>=0; i--){
                 if(a[i]==b[i]){
@@ -21,8 +25,8 @@ int main(){
                 }
             }
         }
-        if(ok==b.size()) cout<<"encaxia"<<endl;
-        else cout<<"nao encaxia"<<endl;
+        if(ok==b.size()) cout<<"encaixa"<<endl;
+        else cout<<"nao encaixa"<<endl;
     }
 }
 
