@@ -1,1 +1,5 @@
-IS DIGIT
+NO
+NO
+YES
+YES
+YES
