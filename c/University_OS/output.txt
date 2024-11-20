@@ -1,6 +1,11 @@
-Enter Number of processes:Enter Burst Time of process 1:Enter Burst Time of process 2:Enter Burst Time of process 3:Process.	B.T.	W.T.	T.A.T.
-P[1]	          20	  0	  20
-P[2]	           3	 20	  23
-P[3]	           3	 23	  26
-Average Waiting Time: 14.333
-Average Turn Around Time:23.000
+Enter the number of processes: Enter arrival time and burst time for process P1: Enter arrival time and burst time for process P2: Enter arrival time and burst time for process P3: Enter arrival time and burst time for process P4: Enter arrival time and burst time for process P5: 
+Process Details:
+Process	Arrival	   Burst	Completion	Turnaround	Waiting
+P1			0		3			3			3		  0
+P2			1		8			11			10		  2
+P3			2		6			17			15		  9
+P4			4		4			21			17		  13
+P5			5		3			24			19		  16
+Average Waiting Time: 8.00
+
+Average Turnaround Time: 12.80
