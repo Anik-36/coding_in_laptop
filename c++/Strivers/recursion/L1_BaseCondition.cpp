@@ -8,10 +8,9 @@ using namespace std;
 void f(){
     if(ct==3)
         return;
-    cout<<ct<<" ";
+    cout<<ct<<" "<<endl;
     ct++;
     f();
-    cout<<"i am f "<<ct<<endl;
 }
 int main(){
     f();
