@@ -18,7 +18,7 @@ int main(){
             if(i==j){
                 pd+=a[i][j];
             }
-            else if((i+j)==n-1){
+            if((i+j)==n-1){
                 sd +=a[i][j];
             }
         }
