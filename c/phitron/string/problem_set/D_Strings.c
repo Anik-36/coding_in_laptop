@@ -5,7 +5,7 @@ int main(){
     scanf("%s%s",a,b);
     int lenA = strlen(a);
     int lenB = strlen(b);
-    char c[21];
+    char c[22];
     for(int i = 0 ; i<lenA; i++){
         c[i] = a[i];
     }
