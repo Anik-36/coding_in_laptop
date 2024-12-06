@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 #define endl '\n'
-#define ll long long 
+#define ll long long
 #define yes cout<<"YES"<<endl;
 #define no cout<<"NO"<<endl;
 using namespace std;
@@ -22,7 +22,7 @@ int main(){
             ll m = dm*20;
             ll dl = p/10;
             if(p%10!=0) dl++;
-            ll l = dl*25;            
+            ll l = dl*25;
             if(s<=m and s<=l) cout<<s<<endl;
             else if(m<=s and m<=l) cout<<m<<endl;
             else if(l<=s and l<=m) cout<<l<<endl;
