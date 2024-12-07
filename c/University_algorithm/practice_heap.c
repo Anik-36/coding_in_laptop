@@ -5,7 +5,7 @@ void heapify(int* a, int curr, int size){
     int leftChild = largest * 2 + 1;
     int rightChild = largest * 2 + 2;
 
-    if(leftChild<size && a[leftChild]<a[largest]){
+    if(leftChild<size && a[leftChild]<a[largest]){ // if i change the greater than sign to less than sign it turns into min heap
         largest = leftChild;
     }
     if(rightChild<size && a[rightChild]<a[largest]){
