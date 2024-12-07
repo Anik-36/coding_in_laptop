@@ -5,10 +5,10 @@ void heapify(int* a, int curr, int size){
     int leftChild = largest * 2 + 1;
     int rightChild = largest * 2 + 2;
 
-    if(leftChild<size && a[leftChild]>a[largest]){
+    if(leftChild<size && a[leftChild]<a[largest]){
         largest = leftChild;
     }
-    if(rightChild<size && a[rightChild]>a[largest]){
+    if(rightChild<size && a[rightChild]<a[largest]){
         largest = rightChild;
     }
     if(largest!=curr){
