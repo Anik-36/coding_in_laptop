@@ -38,9 +38,9 @@ int main(){
     cout<<endl<<"Process\t  Burst Time   \tWaiting Time\tTurnaround Time";
     for(i = 0 ; i<n; i++){
         total = total+bt[i];
-        cout<<endl<<"P["<<p[i]<<"]\t\t"<<bt[i]<<"\t\t"<<wt[i]<<"\t\t\t"<<tat[i];
+        cout<<endl<<"P["<<p[i]<<"]\t\t"<<bt[i]<<"\t\t\t\t"<<wt[i]<<"\t\t\t\t"<<tat[i];
     }
     double avgtt = total/n;
-    cout<<endl<<"Average waiting time"<<fixed<<setprecision(2)<<avgwt<<endl;
-    cout<<endl<<"Average turn around time"<<fixed<<setprecision(2)<<avgtt<<endl;
+    cout<<endl<<endl<<"Average waiting time : "<<fixed<<setprecision(2)<<avgwt<<endl;
+    cout<<endl<<"Average turn around time : "<<fixed<<setprecision(2)<<avgtt<<endl;
 }
