@@ -42,5 +42,5 @@ int main(){
     }
     double avgtt = total/n;
     cout<<endl<<endl<<"Average waiting time : "<<fixed<<setprecision(2)<<avgwt<<endl;
-    cout<<endl<<"Average turn around time : "<<fixed<<setprecision(2)<<avgtt<<endl;
+    cout<<"Average turn around time : "<<fixed<<setprecision(2)<<avgtt<<endl;
 }
