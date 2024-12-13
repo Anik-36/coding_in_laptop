@@ -10,7 +10,7 @@ int main(){
     cout<<"Input process number : "<<endl;
     cin>>n;
     for(i = 0; i<n; i++){
-        cout<<"Input burst time for process P["<<i+1<<"]";
+        cout<<"Input burst time for process P["<<i+1<<"] : ";
         cin>>bt[i];
         p[i]= i+1;
     }
@@ -38,7 +38,7 @@ int main(){
     cout<<endl<<"Process\t  Burst Time   \tWaiting Time\tTurnaround Time";
     for(i = 0 ; i<n; i++){
         total = total+bt[i];
-        cout<<endl<<"P["<<p[i]<<"]\t\t"<<bt[i]<<"\t\t\t\t"<<wt[i]<<"\t\t\t\t"<<tat[i];
+        cout<<endl<<"P["<<p[i]<<"]\t\t"<<bt[i]<<"\t\t"<<wt[i]<<"\t\t"<<tat[i];
     }
     double avgtt = total/n;
     cout<<endl<<endl<<"Average waiting time : "<<fixed<<setprecision(2)<<avgwt<<endl;
