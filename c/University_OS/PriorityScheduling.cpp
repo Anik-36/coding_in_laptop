@@ -123,7 +123,7 @@ printf("\n| Process | Burst Time | Priority | Waiting Time | Turnaround Time |")
 printf("\n--------------------------------------------------------------------");
 for (i = 0; i < n; i++)
 {
-printf("\n|   P[%d]    |    %d     |    %d      |      %d      |      %d       |",p[i], bt[i], pr[i], wt[i], tat[i]);
+printf("\n|   P[%d]\t|\t%d\t|\t%d\t  |\t  %d\t  |\t  %d\t   |",p[i], bt[i], pr[i], wt[i], tat[i]);
 }
 printf("\n---------------------------------------------------------------------");
 printf("\n\nAverage Waiting Time: %.2f", avg_wt);

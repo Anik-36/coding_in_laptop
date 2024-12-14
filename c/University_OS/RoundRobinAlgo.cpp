@@ -5,8 +5,8 @@
 #define no cout<<"NO"<<endl;
 using namespace std;
 int main(){
-    int bt[100],tq,i,n,rembt[100],t=0,wt[100],c = 0, p[100],tat[100];
-    double total = 0, avgwt = 0;
+    int bt[100],tq,i,n,rembt[100],t=0,wt[100],c = 0, p[100],tat[100], current = 0;
+    double totaltat = 0, totalwt = 0;
     cout<<"Input process number : "<<endl;
     cin>>n;
     for(i = 0; i<n; i++){
@@ -19,28 +19,30 @@ int main(){
     for(i = 0 ; i<n; i++){
         rembt[i] = bt[i];
     }
-    while(c!=n){
+    while(c<n){
         for(i = 0; i<n; i++){
-            if(rembt[i]>tq){
-                t = t +tq;
-                rembt[i] = rembt[i] - tq;
-            }else if(rembt[i]!=0){
-                t = t+rembt[i];
-                wt[i] = t - bt[i];
-                tat[i] = t;
-                total = total + wt[i];
-                rembt[i] = 0;
-                c++;
+            if(rembt[i]>0){
+                if(rembt[i]<=tq){
+                    current+=rembt[i];
+                    rembt[i] = 0;
+                    tat[i] = current;
+                    wt[i ] = tat[i] - bt[i];
+                    c++;
+                }else{
+                    rembt[i]-=tq;
+                    current +=tq;
+                }
             }
         }
     }
-    avgwt = total/n;
+
     cout<<endl<<"Process\t  Burst Time   \tWaiting Time\tTurnaround Time";
     for(i = 0 ; i<n; i++){
-        total = total+bt[i];
         cout<<endl<<"P["<<p[i]<<"]\t\t"<<bt[i]<<"\t\t"<<wt[i]<<"\t\t"<<tat[i];
+        totalwt +=wt[i];
+        totaltat +=tat[i];
     }
-    double avgtt = total/n;
-    cout<<endl<<endl<<"Average waiting time : "<<fixed<<setprecision(2)<<avgwt<<endl;
-    cout<<"Average turn around time : "<<fixed<<setprecision(2)<<avgtt<<endl;
+
+    cout<<endl<<endl<<"Average waiting time : "<<fixed<<setprecision(2)<<totalwt/n<<endl;
+    cout<<"Average turn around time : "<<fixed<<setprecision(2)<<totaltat/n<<endl;
 }
