@@ -15,8 +15,7 @@ int main(){
             break;
         }
         if(a[i]==b[i]){
-            printf("Same\n");
-            break;
+            i++;
         }else if(a[i]<b[i]){
             printf("A choto\n");
             break;
