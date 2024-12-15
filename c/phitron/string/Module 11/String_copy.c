@@ -7,6 +7,7 @@ int main(){
         a[i] = b[i];
     }
     // a[strlen(b)] = '\0';
+    strcpy(a,b);
     for(int i = 0; i<strlen(a); i++){
         printf("%c",a[i]);
     }
