@@ -11,8 +11,9 @@ int main(){
         string a;
         cin>>a;
         int  n = a.size();
-        // string b;
-        char b[n];
+        string b;
+        b.resize(n);
+        //char b[n];
         for(int i = n-1,j =0 ; i>=0, j<n; i--, j++){
 
             if(a[i]=='p'){
