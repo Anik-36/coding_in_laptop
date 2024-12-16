@@ -11,14 +11,19 @@ int main(){
         string a;
         cin>>a;
         int  n = a.size();
-        for(int i = n-1,j =0 ; i<=0; i--, j++){
+        // string b;
+        char b[n];
+        for(int i = n-1,j =0 ; i>=0, j<n; i--, j++){
 
             if(a[i]=='p'){
-                a[j] = 'q';
+                b[j] = 'q';
             }else if(a[i] == 'q'){
-                a[j] = 'p';
+                b[j] = 'p';
+            }else {
+                b[j] = 'w';
             }
         }
-        cout<<a<<endl;
+        b[n] = '\0';
+        cout<<b<<endl;
     }
 }
