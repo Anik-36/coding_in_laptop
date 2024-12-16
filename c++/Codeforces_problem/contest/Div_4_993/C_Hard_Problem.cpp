@@ -14,14 +14,13 @@ int main(){
         if(a<=m){
             s+=a;
         }else{
-            a = a-m;
-            s+=a;
+            s+=m;
         }
         if(b<=m){
             s+=b;
         }else{
-            b = b-m;
-            s+=b;
+            //b = b-m;
+            s+=m;
         }
         if(((m*2)-s)>=c){
             s+=c;
