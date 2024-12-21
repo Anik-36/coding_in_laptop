@@ -5,7 +5,8 @@ char a[N];
 int main(){
     scanf("%s",a);
     int f[26] = {0};
-    for(int i=0 ; i<strlen(a); i++){
+    int len = strlen(a);
+    for(int i=0 ; i<len; i++){
         f[a[i]-'a']++;
     }
     for(int i = 0 ; i<26; i++){
