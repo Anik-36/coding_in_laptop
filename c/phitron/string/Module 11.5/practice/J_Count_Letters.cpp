@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<string.h>
+const int N = 1e7+10;
+char a[N];
 int main(){
-    int s = 10^7+10;
-    char a[s];
     scanf("%s",a);
     int f[26] = {0};
     for(int i=0 ; i<strlen(a); i++){
