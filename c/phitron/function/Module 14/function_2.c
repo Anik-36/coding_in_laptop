@@ -1,5 +1,5 @@
 #include<stdio.h>
-int sum(void){
+int sum(void){  // using void give you a signal if you give any parameter to this function
     int x, y;
     scanf("%d%d",&x,&y);
     int s = x+y;
