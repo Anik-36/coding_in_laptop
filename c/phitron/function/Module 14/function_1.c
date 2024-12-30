@@ -9,8 +9,10 @@ int sum(int x , int y){
     return sum;
 }
 int main(){
-    int s = sum(10,20);
+    int a , b;
+    scanf("%d %d",&a,&b);
+    int s = sum(a,b);
     printf("%d\n",s);
-    printf("%d\n",sum(100,300));
+    //printf("%d\n",sum(100,300));
     return 0;
 }
