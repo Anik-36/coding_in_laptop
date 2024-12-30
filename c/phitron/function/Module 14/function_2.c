@@ -6,7 +6,7 @@ int sum(void){
     return s;
 }
 int main(){
-    int s =  sum(100);
+    int s =  sum();
     printf("%d\n",s);
     return 0;
 }
