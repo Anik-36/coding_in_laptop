@@ -7,5 +7,6 @@ void sum(){
 }
 int main(){
     sum();
+    sum();
     return 0;
 }
