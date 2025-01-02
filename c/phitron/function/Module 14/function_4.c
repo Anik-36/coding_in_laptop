@@ -8,5 +8,6 @@ void sum(){
 int main(){
     sum();
     sum();
+    sum();
     return 0;
 }
