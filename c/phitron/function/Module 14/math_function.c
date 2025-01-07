@@ -8,10 +8,14 @@ int main(){
     // double ans  = round(a);
     // printf("%lf\n",ans);
 
-    double b;
-    scanf("%lf",&b);
-    double ans = sqrt(b);
-    printf("%lf\n",ans);
+    // double b;
+    // scanf("%lf",&b);
+    // double ans = sqrt(b);
+    // printf("%lf\n",ans);
 
+    int a, b;
+    scanf("%d%d",&a,&b);
+    int ans = pow(a,b);
+    printf("%d\n",ans);
     return 0;
 }
