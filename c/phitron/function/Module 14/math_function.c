@@ -3,8 +3,9 @@
 int main(){
     double a;
     scanf("%lf",&a);
-    double ans = ceil(a);
+    //double ans = ceil(a);
     //double ans = floor(a);
+    double ans  = round(a);
     printf("%lf\n",ans);
 
 
