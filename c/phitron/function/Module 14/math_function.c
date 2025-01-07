@@ -13,9 +13,15 @@ int main(){
     // double ans = sqrt(b);
     // printf("%lf\n",ans);
 
-    int a, b;
-    scanf("%d%d",&a,&b);
-    int ans = pow(a,b);
-    printf("%d\n",ans);
+    // int a, b;
+    // scanf("%d%d",&a,&b);
+    // int ans = pow(a,b);
+    // printf("%d\n",ans);
+
+    int a;
+    scanf("%d",&a);
+    int ans = abs(a);
+    printf("%d",ans);
+
     return 0;
 }
