@@ -7,5 +7,8 @@ int main(){
     printf("%p\n",p);
     // derefferenc
     printf("%d\n",*p);
+
+    *p = 500;
+    printf("%d\n",x);
     return 0;
 }
