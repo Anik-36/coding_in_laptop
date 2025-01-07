@@ -3,9 +3,9 @@
 int main(){
     double a;
     scanf("%lf",&a);
-    //int ans = ceil(a);
-    int ans = floor(a);
-    printf("%d\n",ans);
+    double ans = ceil(a);
+    //double ans = floor(a);
+    printf("%lf\n",ans);
 
 
     return 0;
