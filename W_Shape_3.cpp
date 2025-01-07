@@ -10,20 +10,20 @@ int main(){
         }
         for(int j = 1; j<=s; j++){
             printf(" ");
-            if(i==n || i==n+1){
-                s=0;
-                s++;
-            }
+        }
+        if(i==n || i==n+1){
+            s=0;
+            s++;
         }
         if(i==n || i==n+1){
             k= (n*2)-1;
         }
         for(int j = 1; j<=k; j++){
             printf("*");
-            if(i==n || i==n+1){
-                k= (n*2)-1;
-                k-=2;
-            }
+        }
+        if(i==n || i==n+1){
+            k= (n*2)-1;
+            k-=2;
         }
         if(i<n){
             s--;
