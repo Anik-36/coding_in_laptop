@@ -1,9 +1,1 @@
-0th index address ->0061FF0C
-0th index address ->0061FF0C
-0th index value ->10
-0th index value ->10
-1th index value ->20
-1th index value ->20
-1th index value ->20
-1th index value ->20
-1th index value ->20
+10 20 30 40 50 
