@@ -1,13 +1,3 @@
-a er address -> 0061FF18
-a er address -> 0061FF18
-a er value -> 200
-a er value -> 200
-p er address -> 0061FF14
-p er address -> 0061FF14
-a er value -> 200
-a er address -> 0061FF18
-a er value -> 200
-p er address -> 0061FF14
-p2 er address -> 0061FF10
-p2 er address -> 0061FF10
-pointer er size -> 4
+main a x er address ->0061FF1C
+fun a x er address ->0061FF00
+10
