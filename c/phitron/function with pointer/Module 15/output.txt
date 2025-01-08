@@ -1,5 +1,5 @@
-a er address -> 0061FF18
-a er address -> 0061FF18
-a er value -> 200
-a er value -> 200
+a er address -> 0061FF10
+a er address -> 0061FF10
+a er value -> 4.59
+a er value -> 4.59
 pointer er size -> 4
