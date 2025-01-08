@@ -1,3 +1,9 @@
-x er address ->0061FF1C
-p er value->0061FF1C
-x er value -> 500
+0th index address ->0061FF0C
+0th index address ->0061FF0C
+0th index value ->10
+0th index value ->10
+1th index value ->20
+1th index value ->20
+1th index value ->20
+1th index value ->20
+1th index value ->20
