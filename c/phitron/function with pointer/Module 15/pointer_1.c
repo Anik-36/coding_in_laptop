@@ -2,6 +2,8 @@
 int main(){
     int a = 50;
     int * p = &a;
+    // derefferencing
+    *p = 200;
     printf("a er address -> %p\n",&a);
     printf("a er address -> %p\n",p);
     printf("a er value -> %d\n",a);
