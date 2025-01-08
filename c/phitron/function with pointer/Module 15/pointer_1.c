@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main(){
     int a = 50;
+    // the datatype of the pointer always should be the variable datatype. because pointer has no datatype
     int * p = &a;
     // derefferencing
     *p = 200;
