@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<math.h>
+#include<stdlib.h>
 int my_abs(int a){
     return abs(a);
 }
