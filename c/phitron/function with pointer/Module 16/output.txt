@@ -1,4 +1,1 @@
-Using for multiply the numbers : multiply = 200
-For give a welcoming message : Hello, Now I have learnt the function properly
-For swapping the numbers : 20 10
-I have no value to do anything
+Palindrome
