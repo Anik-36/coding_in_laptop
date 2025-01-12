@@ -11,13 +11,14 @@ int return_parameter(int a, int b){
 int return_no_parameter(){
 
 }
-void return_parameter(int a){
+void no_return_parameter(int a){
 
 }
 void no_return_no_parameter(){
 
 }
 int main(){
+    int a,b;
 
     return 0;
 }
