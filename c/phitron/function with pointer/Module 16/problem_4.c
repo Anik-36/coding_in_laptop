@@ -6,19 +6,30 @@
 
 #include<stdio.h>
 int return_parameter(int a, int b){
-
+    int multiply = a*b;
+    return multiply;
 }
-int return_no_parameter(){
-
+char * return_no_parameter(){
+    return "Hello, Now I have learnt the function properly\n";
 }
-void no_return_parameter(int a){
-
+void no_return_parameter(int * a, int * b){
+    int temp = *a;
+    *a  = *b;
+    *b = temp;
 }
 void no_return_no_parameter(){
-
+    printf("I have no value to do anything");
 }
 int main(){
-    int a,b;
-
+    int a = 10, b = 20;
+    int multiply = return_parameter(a,b);
+    printf("Using for multiply the numbers : ");
+    printf("multiply = %d\n",multiply);
+    printf("For give a welcoming message : ");
+    printf("%s",return_no_parameter());
+    printf("For swapping the numbers : ");
+    no_return_parameter(&a,&b);
+    printf("%d %d\n",a,b);
+    no_return_no_parameter();
     return 0;
 }
