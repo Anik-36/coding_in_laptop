@@ -1,3 +1,4 @@
+//print from 1 to 5
 #include<stdio.h>
 void fun(int i){
     if(i>=6) return;
