@@ -1,6 +1,9 @@
 #include<stdio.h>
 void print_n_to_1(int n){
-    if(n==0) return;
+    if(n==1) {
+        printf("%d",n);
+        return;
+    }
     printf("%d ",n);
     print_n_to_1(n-1);
 }
