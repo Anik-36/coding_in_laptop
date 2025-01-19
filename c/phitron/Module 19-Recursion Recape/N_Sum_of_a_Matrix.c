@@ -1,8 +1,10 @@
 #include<stdio.h>
-void sum_of_matrix(int[][] a,int b[][],int s[][],int r, int c){
+void sum_of_matrix(int r, int c, int a[r][c],int b[r][c],int s[r][c]){
     if(r<0 || c<0) return;
     s[r][c] = a[r][c]+b[r][c];
-    sum_of_matrix(a,b,s,r-1,c-1);
+    for(int i = 0;i <r; i++){
+        sum_of_matrix(a,b,s,r,c-1);
+    }
     return;
 }
 int main(){
