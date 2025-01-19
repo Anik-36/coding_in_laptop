@@ -1,6 +1,9 @@
 #include<stdio.h>
-int sum_of_matrix(int * a,int * b,int * s,int r, int c){
-    
+void sum_of_matrix(int[][] a,int b[][],int s[][],int r, int c){
+    if(r<0 || c<0) return;
+    s[r][c] = a[r][c]+b[r][c];
+    sum_of_matrix(a,b,s,r-1,c-1);
+    return;
 }
 int main(){
     int r,c;
@@ -17,9 +20,10 @@ int main(){
         }
     }
     int s[r][c];
+    sum_of_matrix(a,b,s,r-1,c-1);
     for(int i = 0; i<r; i++){
         for(int j = 0; j<c; j++){
-            s[i][j] = a[i][j]+b[i][j];
+           // s[i][j] = a[i][j]+b[i][j];
             printf("%d ",s[i][j]);
         }
         printf("\n");
