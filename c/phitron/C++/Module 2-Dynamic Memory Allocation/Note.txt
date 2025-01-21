@@ -10,3 +10,8 @@ declaration ->
 int * a ( stack part ) = new int ( heap part );
 *a = 5; // dereferencing the address for store a value
 cout<<*a<<endl; // " a " means the address of the heap memory. " *a " means the value that stored in a.
+
+for dynamic array declaration ->
+
+int * a = new int[5]; // it makes an array in heap memory and gives you the 1st index . then the rest of the works will be same as statice memory.
+
