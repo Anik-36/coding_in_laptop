@@ -9,4 +9,9 @@ int main(){
     * a = 40;
     cout<<a<<endl;
     cout<<*a<<endl;
+
+    float * b = new float ;
+    *b = 5.265;
+    cout<<b<<endl;
+    cout<<*b<<endl;
 }
