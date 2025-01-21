@@ -1,0 +1,12 @@
+/* stack memory's problem */
+stack memory can not allow to
+1. extend the memory size in run time
+2. it can not return a full array because it removes its data after a function return .
+
+heap do not give you variable. it gives the address of the variable that is created in the heap memory.
+
+declaration ->
+
+int * a ( stack part ) = new int ( heap part );
+*a = 5; // dereferencing the address for store a value
+cout<<*a<<endl; // " a " means the address of the heap memory. " *a " means the value that stored in a.
