@@ -1,9 +1,10 @@
-/* stack memory's problem */
+/************************************************************************************** stack memory's problem ****************************************************************/
 stack memory can not allow to
 1. extend the memory size in run time
 2. it can not return a full array because it removes its data after a function return .
+3. it waste the memory it get . because it does not allow to delete the variable .
 
-/********************************************************************************   heap varaible declaration ******************************************************************************/
+/********************************************************************************   dynamic varaible declaration ******************************************************************************/
 
 
 heap do not give you variable. it gives the address of the variable that is created in the heap memory.
@@ -18,7 +19,7 @@ if you want to delete the pointer
 syntax -> delete a;  or delete b; ( only pointer name )
 
 
-/*************************************************************************************** heap array declaration ******************************************************************************/
+/*************************************************************************************** dynamic array declaration ******************************************************************************/
 
 for dynamic array declaration ->
 
