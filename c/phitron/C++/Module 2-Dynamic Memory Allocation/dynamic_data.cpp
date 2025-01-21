@@ -14,4 +14,7 @@ int main(){
     *b = 5.265;
     cout<<b<<endl;
     cout<<*b<<endl;
+    // deleting the variable
+    delete b;
+    cout<<*b<<endl;
 }
