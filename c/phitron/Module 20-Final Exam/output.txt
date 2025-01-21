@@ -1,0 +1,3 @@
+Capital - 6
+Small - 18
+Spaces - 5
