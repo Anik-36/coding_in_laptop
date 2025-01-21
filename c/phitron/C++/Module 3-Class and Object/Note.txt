@@ -1,0 +1,14 @@
+/************************************************************************************** Creating a class and object *****************************************************************/
+
+class class_name{
+    public:
+        data_type varable1;
+        data_type varable2;
+        data_type varable3;
+};
+int main(){
+    class_name object_name;
+    object_name.varaible1 = value;
+    object_name.varaible2 = value;
+    object_name.varaible3 = value;
+}
