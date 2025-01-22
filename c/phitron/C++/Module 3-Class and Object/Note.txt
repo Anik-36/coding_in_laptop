@@ -27,3 +27,25 @@ class class_name{
             variable1 = variable;
         }
 };
+
+
+
+/************************************************************************************ Return Value Optimization(RVO) *****************************************************************/
+
+we know when a function has end it removes all the value what it has. but for the object it set all the value to the main function object and then return and remove. this is called RVO .
+
+Student fun(){
+    Student r(28,12,'A',"Rahim Uddin");
+    return r;
+}
+main(){
+    Student rahim = fun();
+}
+
+it means that
+rahim.name <- r.name
+rahim.cls <- r.cls
+rahim.roll <- r.roll
+rahim.section <- r.section
+
+after setting the value ,then it will be deleted.
