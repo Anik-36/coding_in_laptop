@@ -62,3 +62,13 @@ for accessing :
  (*rahim).name = rahim->name; // we need to dereferencing it.
 
  for deleting the object: delete rahim;
+
+
+
+ /***************************************************************************************** built in sorting function ****************************************************************/
+
+ sort(a,a+n);
+ // a is the 1st index. a+n means location before a[n]
+
+ if we want to sort greater to less
+ sort(a,a+n,greater<int>()) // greater<data_type>() = comparison function.
