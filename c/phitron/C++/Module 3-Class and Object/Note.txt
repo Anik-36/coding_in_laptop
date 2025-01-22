@@ -28,9 +28,9 @@ class class_name{
         }
 };
 
+/************************************************************************************** return object from function *****************************************************************/
 
-
-/************************************************************************************ Return Value Optimization(RVO) *****************************************************************/
+/********************************************************************************** Return Value Optimization(RVO) *****************************************************************/
 
 we know when a function has end it removes all the value what it has. but for the object it set all the value to the main function object and then return and remove. this is called RVO .
 
