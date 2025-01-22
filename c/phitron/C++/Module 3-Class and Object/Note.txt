@@ -53,8 +53,12 @@ after setting the value ,then it will be deleted.
 
 /******************************************************************************************* dynamic object creating *****************************************************************/
 
+syntax:
+
 Student * rahim = new Student;
 
 for accessing :
  rahim->name; //rahim.name not work.
  (*rahim).name = rahim->name; // we need to dereferencing it.
+
+ for deleting the object: delete rahim;
