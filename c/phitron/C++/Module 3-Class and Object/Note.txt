@@ -2,13 +2,28 @@
 
 class class_name{
     public:
-        data_type varable1;
-        data_type varable2;
-        data_type varable3;
+        data_type variable1;
+        data_type variable2;
+        data_type variable3;
 };
 int main(){
     class_name object_name;
-    object_name.varaible1 = value;
-    object_name.varaible2 = value;
-    object_name.varaible3 = value;
+    object_name.variable1 = value;
+    object_name.variable2 = value;
+    object_name.variable3 = value;
 }
+
+
+
+
+constructor means the same name function of class name.
+class class_name{
+    public:
+        data_type variable1;
+        data_type variable2;
+        data_type variable3;
+
+        class_name(data_type varaible){
+            variable1 = variable;
+        }
+};
