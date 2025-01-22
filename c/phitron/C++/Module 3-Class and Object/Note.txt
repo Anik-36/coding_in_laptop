@@ -55,4 +55,6 @@ after setting the value ,then it will be deleted.
 
 Student * rahim = new Student;
 
-for accessing : rahim->name; //rahim.name not work.
+for accessing :
+ rahim->name; //rahim.name not work.
+ (*rahim).name = rahim->name; // we need to dereferencing it.
