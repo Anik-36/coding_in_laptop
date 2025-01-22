@@ -11,8 +11,11 @@ int main(){
     for(int i = 0 ; i<n; i++){
         cin>>a[i];
     }
+    // sorting for ascending
     // sort(a,a+n);
+    /// sorting for descending
     sort(a,a+n,greater<int>());
+    
     for(int i = 0 ; i<n; i++){
         cout<<a[i]<<" ";
     }
