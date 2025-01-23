@@ -67,3 +67,11 @@ impotant
 *********/
 
 if you don't use getchar(),cin.ignore() then you can't take input string after taking input an integer.
+
+/******************************************************************************** Word printing ***********************************************************/
+
+string s;
+stringstream varaible_name;  // stringstream a;
+a<<s; // append the string in the group a
+string b;
+a>>b; // give the word to b 
