@@ -31,3 +31,15 @@ s.insert() -> insert a portion to a specific position.
 Iterators
 s.begin() -> pointer to the first element.
 s.end() -> pointer to the next element after the last element of the string.
+
+
+
+/********************************************************************************* space input in string ***********************************************************/
+
+// cin>>s; // cin is as like as scanf. it will be terminated when it finds any space.
+
+
+fgets(s,100,stdin); // if you give eneter , it takes the newline and print it and also count as a size.
+
+
+cin.getline(s,100); // cin.getline() is similar to fgets. but fgets take the enter but cin.getline() don't. so the newline problem is solved.
