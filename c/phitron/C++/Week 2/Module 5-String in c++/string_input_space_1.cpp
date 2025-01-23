@@ -12,7 +12,7 @@ int main(){
     // fgets(s,100,stdin); // if you give eneter , it takes the newline and print it and also count as a size.
 
 
-    cin.getline(s,100); // cin.getline() is similar to fgets. but fgets take the enter but cin.getline() don't. so the newline problem is solved.
+    cin.getline(s,100); // cin.getline() is similar to fgets. but fgets take the newline but cin.getline() don't. so the newline problem is solved.
 
 
     cout<<s<<endl;
