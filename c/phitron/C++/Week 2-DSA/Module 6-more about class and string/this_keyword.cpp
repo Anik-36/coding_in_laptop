@@ -10,7 +10,7 @@ class Person{
         int age;
         Person(string name,int age){
             (*this).name = name; // this is pointer of the class. so if we put a value , we should dereference the pointer .
-            (*this).age  = age;
+            this->age  = age;
         }
         void hello(){
             cout<<"hello"<<endl;
