@@ -23,7 +23,7 @@ int main(){
     for(int i = 0; i<3; i++){
         getline(cin,a[i].name);
         cin>>a[i].roll>>a[i].marks;
-        cin.ignore();
+        cin.ignore(); // when we take an integer and next a string getline takes the newline as a input. thats why cin.ignore is used
     }
     for(int i = 0; i<3; i++){
         cout<<a[i].name<<" "<<a[i].roll<<" "<<a[i].marks<<endl;
