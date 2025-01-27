@@ -7,20 +7,17 @@ using namespace std;
 int main(){
     string s;
     getline(cin,s);
-    stringstream ss(s);
-    string word;
     int ct = 0;
-    bool flag = false;
-    while(ss>>word){
-        for(char c:word){
-            if((c>='A'&& c<='Z') || (c>='a' && c<='z')){
-                flag = true;
-                break;
-            }else{
-                flag = false;
+    bool is_word = false;
+    for(char c:s){
+        if((c>='A'&& c<='Z') || (c>='a' && c<='z')){
+            if(is_word == false){
+                ct++;
+                is_word  = true;
             }
+        }else{
+            is_word = false;
         }
-        if(flag == true) ct++;
     }
     cout<<ct<<endl;
 }
