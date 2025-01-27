@@ -17,32 +17,9 @@ int main(){
                 }
             }
             if(flag==true){
-                b.replace(i,5," ");
-                i+=4;
+                a.replace(i,5," ");
             }
         }
     }
-    cout<<b<<endl;
+    cout<<a<<endl;
 }
-
-
-
-
-
-// #include <bits/stdc++.h>
-// using namespace std;
-
-// int main() {
-//     string a;
-//     getline(cin, a); // Use getline to handle strings with spaces
-//     string b = "EGYPT";
-//     size_t pos = 0;
-
-//     // Replace all occurrences of "EGYPT" with a single space
-//     while ((pos = a.find(b, pos)) != string::npos) {
-//         a.replace(pos, b.size(), " ");
-//     }
-
-//     cout << a << endl;
-//     return 0;
-// }
