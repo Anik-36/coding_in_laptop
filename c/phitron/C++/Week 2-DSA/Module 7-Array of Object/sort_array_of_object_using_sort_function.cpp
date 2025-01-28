@@ -11,8 +11,8 @@ class Student{
         int marks;
 };
 bool cmp(Student a, Student b){ // make function for mark sorting
-    if(a.marks<b.marks) true;
-    else false;
+    if(a.marks<b.marks) return true;
+    else return false;
 }
 int main(){
     Student a[3];
