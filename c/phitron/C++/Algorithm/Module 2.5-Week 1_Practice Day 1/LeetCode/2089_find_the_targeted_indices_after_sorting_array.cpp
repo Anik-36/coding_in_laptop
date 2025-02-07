@@ -8,33 +8,35 @@ int main(){
     int a[]= {1,2,5,2,3};
     int n = sizeof(a)/sizeof(int);
     int ans;
-    int target = 2;
+    int target;
+    cin>>target;
     sort(a,a+n);
     for(int i = 0; i<n; i++){
         cout<<a[i]<<" ";
     }
-    // int b[n]={};
-    // int l = 0;
-    // int u = n-1;
-    // while(l<u){
-    //     int m = (l+u)/2;
-    //     if(a[m]>target){
-    //         u = m;
-    //     }else if(a[m]<target){
-    //         l = m+1;
-    //     }else{
-    //         l = m;
-    //     }
-    //     ans = l;
-    // }
-    // if(a[l]==target){
-    //     for(int i = 0, j = l; a[j]==target; j++,i++){
-    //         b[i] = j;
-    //     }
-    // }
-    // for(int i = 0; i<sizeof(b)/sizeof(b[0]); i++){
-    //     cout<<b[i]<<" ";
-    // }
+    cout<<endl;
+    vector<int> b;
+    int l = 0;
+    int u = n-1;
+    while(l<u){
+        int m = (l+u)/2;
+        if(a[m]>target){
+            u = m;
+        }else if(a[m]<target){
+            l = m+1;
+        }else{
+            l = m;
+        }
+        ans = l;
+    }
+    if(a[l]==target){
+        for(int i = l; a[i]==target; i++){
+            b.push_back(i);
+        }
+    }
+    for(int i = 0; i<sizeof(b)/sizeof(b[0]); i++){
+        cout<<b[i]<<" ";
+    }
 }
 
 
@@ -42,32 +44,31 @@ int main(){
 
 
 
-
 class Solution {
-public:
-    vector<int> targetIndices(vector<int>& a, int target) {
-        int n = a.size();
-        sort(a.begin(),a.end());
-        vector<int> b;
-        int ans;
-        int l = 0;
-        int u = n-1;
-        while(l<u){
-            int mid = (l+u)/2;
-            if(a[mid]<target){
-                l = mid + 1;
-            }else if(a[mid]>target){
-                u = mid;
-            }else{
-                l = mid;
+    public:
+        vector<int> targetIndices(vector<int>& a, int target) {
+            int n = a.size();
+            sort(a.begin(),a.end());
+            vector<int> b;
+            int ans = -1;
+            int l = 0;
+            int u = n-1;
+            while(l<=u){
+                int mid = (l+u)/2;
+                if(a[mid]>=target){
+                    u = mid - 1;
+                    if(a[mid]==target){
+                        ans = mid;
+                    }
+                }else{
+                    l = mid + 1;
+                }
             }
-            ans = l;
-        }
-        if(a[l]==target){
-            for(int i = l; a[i]==target; i++){
-                b.pushback(i);
+            if(ans != -1){
+                for(int i = ans ; i<a.size() and a[i]==target; i++){
+                    b.push_back(i);
+                }
             }
+            return b;
         }
-        return b;
-    }
-};
+    };
