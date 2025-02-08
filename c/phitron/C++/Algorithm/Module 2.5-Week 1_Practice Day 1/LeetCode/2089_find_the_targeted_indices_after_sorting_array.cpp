@@ -26,3 +26,7 @@ class Solution {
             return b;
         }
     };
+
+
+
+    //https://leetcode.com/problems/find-target-indices-after-sorting-array/description/
