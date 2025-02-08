@@ -38,3 +38,5 @@ int main(){
     }
     cout<<ct<<endl;
 }
+
+//https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/description/
