@@ -21,3 +21,6 @@ class Solution {
             }else return l;
         }
     };
+
+
+    //https://leetcode.com/problems/search-insert-position/?envType=problem-list-v2&envId=binary-search
