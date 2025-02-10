@@ -1,6 +1,7 @@
 O(1) -> constant time -> 0 sec
 O(logN) -> 10^18
 O(sqrt(N)) -> 10^14
-O(N) -> 10^7
+O(N) -> 10^7 -> 1 second
+O(NlogN) -> 10^5 == 1.6x10^6 -> 1 sec
 O(N^2) -> 10^3
 O(N*M) -> 10^3
