@@ -19,20 +19,25 @@ int main(){
         for(int i = 0 ; i<m; i++){
             cin>>b[i];
         }
-        if(a[0]>a[1]){
-            j = b[0] - a[0];
+        j = b[0] - a[0];
+        if(j<a[0]){
             a[0] = j;
-            if(a[0]>a[1]){
-                flag = false;
-            }
         }
-        for(int i = 1; i<n-1; i++){
-            if(a[i-1]>a[i] or a[i]>a[i+1]){
-                j = b[0]-a[i];
-                a[i] = j;
-                if(a[i-1]>a[i] or a[i]>a[i+1]){
-                    flag = false;
+        for(int i = 1; i<n; i++){
+            if(a[i-1]<=a[i]){
+                j = b[0] - a[i];
+                if(j<a[i] and j>=a[i-1]){
+                    a[i] = j;
                 }
+            }
+            else{
+                j = b[0]-a[i];
+                if(j>=a[i-1]){
+                    a[i] = j;
+                }
+            }
+            if(a[i-1]>a[i]){
+                flag = false;
             }
         }
         if(flag == true){
