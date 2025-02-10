@@ -10,6 +10,6 @@ int main(){
     while(n>0){
         int r = n%10;
         cout<<r<<endl;
-        n/=10;
+        n/=10;  // O(logN)
     }
 }
