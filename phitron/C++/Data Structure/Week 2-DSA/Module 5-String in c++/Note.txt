@@ -1,0 +1,77 @@
+String built-in functions:
+
+Capacity
+s.size() -> returns the size of the string.
+s.max_size() -> returns the maximum size that string can hold.
+s.capacity() -> returns current available capacity of the string.
+s.clear() -> clear the string.
+s.empty() -> return true/false if the string is empty.
+s.resize() -> change the size of the string.
+
+
+Element access
+S[i] -> access the ith index of the string.
+s.at(i) -> access the ith index of the string.
+s.back() -> access the last element of the string.
+s.front() -> access the first element of the string.
+
+
+Modifiers
+s+= -> append another string.
+s.append() -> append another string.
+s.push_back() -> add character to the last of the string.
+s.pop_back() -> remove the last character of the string.
+s= -> assign string.
+s.assign() -> assign string.
+s.erase() -> erase characters from the string.
+s.replace() -> replace a portion of the string.
+s.insert() -> insert a portion to a specific position.
+
+
+Iterators
+s.begin() -> pointer to the first element.
+s.end() -> pointer to the next element after the last element of the string.
+
+
+
+/******************************************************************* space input in string as a character array ***********************************************************/
+
+// cin>>s; // cin is as like as scanf. it will be terminated when it finds any space.
+
+
+fgets(s,100,stdin); // if you give eneter , it takes the newline and print it and also count as a size.
+
+
+cin.getline(s,100); // cin.getline() is similar to fgets. but fgets take the enter but cin.getline() don't. so the newline problem is solved.
+
+/************************************************************************************ as a string **********************************************************/
+
+int main(){
+    int x;
+    cin>>x;
+
+    // getchar(); // for ignoring the newline as a input string after inputing any integer or decimal value
+    cin.ignore(); // similar to getchar().
+
+    string s;
+    // cin.getline(); // used when char s[100]. for static string.
+    getline(cin,s); // for dynamic string .
+
+
+    cout<<x<<endl;
+    cout<<s<<endl;
+}
+
+/********
+impotant
+*********/
+
+if you don't use getchar(),cin.ignore() then you can't take input string after taking input an integer.
+
+/******************************************************************************** Word printing ***********************************************************/
+
+string s;
+stringstream varaible_name;  // stringstream a;
+a<<s; // append the string in the group a
+string b;
+a>>b; // give the word to b 

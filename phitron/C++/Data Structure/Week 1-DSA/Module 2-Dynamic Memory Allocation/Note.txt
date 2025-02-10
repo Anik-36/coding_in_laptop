@@ -1,0 +1,30 @@
+/************************************************************************************** stack memory's problem ****************************************************************/
+stack memory can not allow to
+1. extend the memory size in run time
+2. it can not return a full array because it removes its data after a function return .
+3. it waste the memory it get . because it does not allow to delete the variable .
+
+/********************************************************************************   dynamic varaible declaration ******************************************************************************/
+
+
+heap do not give you variable. it gives the address of the variable that is created in the heap memory.
+
+declaration ->
+
+int * a ( stack part ) = new int ( heap part );
+*a = 5; // dereferencing the address for store a value
+cout<<*a<<endl; // " a " means the address of the heap memory. " *a " means the value that stored in a.
+
+if you want to delete the pointer
+syntax -> delete a;  or delete b; ( only pointer name )
+
+
+/*************************************************************************************** dynamic array declaration ******************************************************************************/
+
+for dynamic array declaration ->
+
+int * a = new int[5]; // it makes an array in heap memory and gives you the 1st index . then the rest of the works will be same as statice memory.
+
+if you want to delete the array
+syntax -> delete[] a;  // if you write delete a, it will just delete the 1st index value only.
+
