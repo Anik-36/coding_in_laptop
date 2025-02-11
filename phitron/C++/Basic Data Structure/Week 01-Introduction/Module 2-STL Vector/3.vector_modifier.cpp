@@ -6,9 +6,15 @@
 using namespace std;
 int main(){
     vector<int> v = {10,20,30};
-    vector<int> x = {1,2,3};
-    v = x; // O(1) when both are same size
-    for(int a : v){
-        cout<<a<<" ";
+    v.pop_back();
+    v.pop_back();
+    for(int b:v){
+        cout<<b<<" ";
     }
+
+    // vector<int> x = {1,2,3};
+    // v = x; // O(1) when both are same size
+    // for(int a : v){
+    //     cout<<a<<" ";
+    // }
 }
