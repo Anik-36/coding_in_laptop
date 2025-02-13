@@ -14,9 +14,14 @@ int main(){
         cin>>a[i];
         fr[a[i]]++;
     }
-    sort(a.begin(),a.end());
+    // sort(a.begin(),a.end());
     for(int i = 0 ; i<n; i++){
-        if(fr[a[i]+1]>0){
+        // if(fr[a[i]+1]>0){
+        //     ct++;
+        // }
+        vector<int> :: iterator it;
+        it = find(a.begin(),a.end(),a[i]+1);
+        if(it !=a.end()){
             ct++;
         }
     }
