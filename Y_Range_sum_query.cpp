@@ -5,19 +5,25 @@
 #define no cout<<"NO"<<endl;
 using namespace std;
 int main(){
-    int n,q;
+    ll n,q;
     cin>>n>>q;
-    vector<int>a(n);
+    vector<ll>a(n);
     for(int i =0; i<n; i++){
         cin>>a[i];
     }
+    vector<ll> pre(n);
+    pre[0] = a[0];
+    for(int i = 1 ; i<n; i++){
+        pre[i] = a[i] + pre[i-1];
+    }
     while(q--){
-        int l,r;
+        ll l,r;
         cin>>l>>r;
-        int sum = 0;
-        for(int i = l-1; i<r; i++){
-            sum+=a[i];
-        }
+        l--;
+        r--;
+        ll sum ;
+        if(l==0) sum = pre[r];
+        else sum = pre[r] - pre[l-1];
         cout<<sum<<endl;
     }
 }
