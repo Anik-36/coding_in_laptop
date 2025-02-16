@@ -14,6 +14,7 @@ int main(){
     a.val = 10;
     b.val = 20;
     a.next = &b;
+    b.next = NULL;
     cout<<a.val<<endl;
     cout<<b.val<<endl;
     cout<<(*a.next).val<<endl;
