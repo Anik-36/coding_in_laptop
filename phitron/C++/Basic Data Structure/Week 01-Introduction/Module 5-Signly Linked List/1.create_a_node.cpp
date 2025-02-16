@@ -17,4 +17,5 @@ int main(){
     cout<<a.val<<endl;
     cout<<b.val<<endl;
     cout<<(*a.next).val<<endl;
+    cout<<a.next->val<<endl;
 }
