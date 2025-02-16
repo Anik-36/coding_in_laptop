@@ -1,0 +1,3 @@
+why a linked list needed?
+-> to reduce siquentiality form of array because of memory efficiency. and value is stored in random memory address and got linked.
+-> to increase size continuously that array can't do.
