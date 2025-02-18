@@ -85,6 +85,7 @@ int main(){
                 insert_at_any_position(head,pos,val);
             }
         }else if(op == 4){
+            cout<<"Enter the value : ";
             int val;
             cin>>val;
             insert_at_head(head,val);
