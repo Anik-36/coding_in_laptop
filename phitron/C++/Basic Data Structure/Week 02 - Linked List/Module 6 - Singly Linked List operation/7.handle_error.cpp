@@ -63,8 +63,16 @@ void delete_at_position(Node * head,int pos){
     Node * tmp = head;
     for(int i = 1; i<=pos - 1; i++){
         tmp = tmp->next;
+        if(tmp == NULL){
+            cout<<endl<<"Invalid Index"<<endl<<endl;
+            return;
+        }
     }
     Node * deleteNOde = tmp->next;
+    if(tmp->next == NULL){
+        cout<<endl<<"Invalid Index"<<endl<<endl;
+        return;
+    }
     tmp->next = tmp->next->next;
     delete deleteNOde;
     cout<<"Deleted Node "<<pos<<endl<<endl;
