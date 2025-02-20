@@ -81,7 +81,7 @@ int main(){
         cout<<"Opiton 1 : Insert at tail "<<endl;  // done
         cout<<"Option 2 : Print the Linked List "<<endl; // done
         cout<<"Option 3 : Insert at any postion "<<endl; // done
-        cout<<"Option 4 : Insert at head "<<endl;
+        cout<<"Option 4 : Insert at head "<<endl;  // done
         cout<<"Option 5 : Delete at any position "<<endl;
         cout<<"Option 6 : Delete at head "<<endl;
         cout<<"Option 7 : Break "<<endl;
