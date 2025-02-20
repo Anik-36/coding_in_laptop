@@ -43,11 +43,11 @@ void insert_at_any_position(Node * head,int pos, int val){
     Node * tmp = head;
     Node * new_node = new Node(val);
     for(int i = 1; i<=pos-1; i++){
+        tmp = tmp->next;
         if(tmp == NULL){
             cout<<endl<<"Invalid Index"<<endl<<endl;
             return;
         }
-        tmp = tmp->next;
     }
     new_node->next = tmp->next;
     tmp->next = new_node;
