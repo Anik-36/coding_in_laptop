@@ -78,6 +78,10 @@ void delete_at_position(Node * head,int pos){
     cout<<"Deleted Node "<<pos<<endl<<endl;
 }
 void delete_head(Node * &head){
+    if(head == NULL){
+        cout<<endl<<"Head is not availbale"<<endl<<endl;
+        return;
+    }
     Node * deleteNode = head;
     head = head->next;
     delete deleteNode;
@@ -90,7 +94,7 @@ int main(){
         cout<<"Option 2 : Print the Linked List "<<endl; // done
         cout<<"Option 3 : Insert at any postion "<<endl; // done
         cout<<"Option 4 : Insert at head "<<endl;  // done
-        cout<<"Option 5 : Delete at any position "<<endl;
+        cout<<"Option 5 : Delete at any position "<<endl; // done
         cout<<"Option 6 : Delete at head "<<endl;
         cout<<"Option 7 : Break "<<endl;
         int op ;
