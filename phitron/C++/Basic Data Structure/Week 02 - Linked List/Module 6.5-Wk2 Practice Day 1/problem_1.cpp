@@ -40,7 +40,7 @@ void insert_linked_list(Node * &head, int val){
 int print_size_linked_list(Node * head){
     Node * tmp = head;
     int size = 0;
-    while(tmp->next != NULL){
+    while(tmp != NULL){
         tmp = tmp->next;
         size++;
     }
@@ -51,10 +51,10 @@ int main(){
     Node * head = NULL;
     while(true){
         int val;
+        cin>>val;
         if(val == -1){
             break;
         }
-        cin>>val;
         insert_linked_list(head,val);
     }
     int size = print_size_linked_list(head);
