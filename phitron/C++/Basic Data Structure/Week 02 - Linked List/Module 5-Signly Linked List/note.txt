@@ -1,3 +1,5 @@
+The node is a pointer(address) of a group.
+
 the first node name is always "head".
 
 why a linked list needed?
@@ -6,5 +8,5 @@ why a linked list needed?
 
 why we use dynamic object for linked list:
 1. when a function is return the object will be deleted. though we do not return the object. so the linked value will be removed.
-2. if we don't need the object we need to delete . so we shouldncreate dynamic object all the time.
+2. if we don't need the object we need to delete . so we should create dynamic object all the time.
 
