@@ -1,0 +1,4 @@
+difference between array and linked list time complexity
+1. insert in any postion both are O(N);
+2. insert at tail both are O(1);
+3. insert at head array will take O(N) but linked list will take O(1);
