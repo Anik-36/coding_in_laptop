@@ -44,3 +44,5 @@ int main(){
     }
     print_linked_list(head);
 }
+
+// complexity - O(1)
