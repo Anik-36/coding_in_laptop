@@ -5,3 +5,5 @@ difference between array and linked list time complexity
 
 for head , linked list is more optimized
 and for tail array is more optimized. also linked list can do by tracking tail.
+
+singly linked list can't access backwardly but we can use recursion to print the singly linked list reversly.
