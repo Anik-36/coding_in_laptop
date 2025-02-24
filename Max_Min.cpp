@@ -1,15 +1,3 @@
-/*Question: Take a singly linked list as input, then print the maximum value of them.
-
-
-Sample Input
-Sample Output
-2 4 1 3 5 4 2 5 -1
-5
-5 4 1 2 5 6 8 4 1 3 -1
-8
-
-*/
-
 #include<bits/stdc++.h>
 #define endl '\n'
 #define ll long long
@@ -25,7 +13,7 @@ class Node{
             this->next = NULL;
         }
 };
-void input_into_linked_list(Node * &head,Node * &tail,int val){
+void input_linked_list(Node * &head, Node * &tail, int val){
     Node * newNode = new Node(val);
     if(head == NULL){
         head = newNode;
@@ -44,6 +32,15 @@ int maximum_linked_list(Node * head){
     }
     return maximum;
 }
+int minimum_linked_list(Node * head){
+    Node * tmp = head;
+    int minimum = INT_MAX;
+    while(tmp != NULL){
+        if(tmp->val < minimum) minimum = tmp->val;
+        tmp = tmp->next;
+    }
+    return minimum;
+}
 int main(){
     Node * head = NULL;
     Node * tail = NULL;
@@ -51,8 +48,10 @@ int main(){
         int val;
         cin>>val;
         if(val == -1) break;
-        input_into_linked_list(head,tail,val);
+        input_linked_list(head,tail,val);
     }
     int mx = maximum_linked_list(head);
-    cout<<mx<<endl;
+    int mn = minimum_linked_list(head);
+    cout<<mx<<" "<<mn<<endl;
+
 }
