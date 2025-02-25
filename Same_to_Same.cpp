@@ -56,9 +56,10 @@ int main(){
     bool flag = true;
 
     if(size1 == size2){
-        for(Node * i = head1, j=head2 ; i!= NULL; i = i->next, j= j->next){
+        for(Node * i = head1, * j=head2 ; i!= NULL; i = i->next, j= j->next){
             if(i->val != j->val){
                 flag = false;
+                break;
             }
         }
         if(flag == true) yes
