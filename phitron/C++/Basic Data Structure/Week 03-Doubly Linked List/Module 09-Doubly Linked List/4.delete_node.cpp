@@ -81,9 +81,9 @@ int main(){
     cin>>pos;
     if(pos == 0){
         delete_head(head);
-    }else if(pos == size_of_doubly(head)){
+    }else if(pos == size_of_doubly(head)-1){
         delete_tail(tail);
-    }else if(pos > size_of_doubly(head)){
+    }else if(pos >= size_of_doubly(head)){
         cout<<"Invaild Index"<<endl;
     }
     else{
