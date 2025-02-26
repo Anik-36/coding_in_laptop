@@ -62,6 +62,17 @@ void insert_head(Node * &head,Node * &tail, int val){
     head->prev = newNode;
     head = newNode;
 }
+void insert_tail(Node * &head, Node * &tail, int val){
+    Node * newNode = new Node(val);
+    if(tail == NULL){
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+    tail->next = newNode;
+    newNode->prev = tail;
+    tail = newNode;
+}
 int main(){
     Node * head = new Node(10);
     Node * a = new Node(20);
@@ -82,9 +93,13 @@ int main(){
     if(pos == 0){
         insert_head(head, tail,val);
     }
-    else if(pos>=size_of_doubly(head)){
+    else if(pos>size_of_doubly(head)){
         cout<<"Invalid Index"<<endl;
-    }else{
+    }
+    else if(pos == size_of_doubly(head)){
+        insert_tail(head,tail,val);
+    }
+    else{
         insert_at_position(head,pos,val);
     }
 
