@@ -10,16 +10,21 @@ int main(){
     string b;
     string ans;
     int ct = 0;
+    int ict = 0;
     for(int i = 0; i<a.size(); i++){
-        if(a[i]-'0' >= 1 ){
+        if(a[i]-'0' >= 1 and a[i]-'0'<=9){
+            ct = a[i]-'0';
             for(int j = i+2; a[j]!=']'; j++){
                 b+=a[j];
-                ct++;
+                ict = j;
             }
-            for(int j = 1; j<=a[i]; j++){
+            i = ict++;
+            for(int j = 1; j<=ct; j++){
                 ans+=b;
             }
-        }else if(a[i]>='a' and a[i]<='z'){
+            b.clear();
+        }
+        else if(a[i]>='a' and a[i]<='z'){
             ans.push_back(a[i]);
         }
     }
