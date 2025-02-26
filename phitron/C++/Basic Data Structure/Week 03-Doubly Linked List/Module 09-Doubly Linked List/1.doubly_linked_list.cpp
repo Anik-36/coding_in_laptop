@@ -23,6 +23,14 @@ void print_normal(Node * head){
     }
     cout<<endl;
 }
+void print_reverse(Node * tail){
+    Node * tmp = tail;
+    while(tmp != NULL){
+        cout<<tmp->val<<" ";
+        tmp = tmp->prev;
+    }
+    cout<<endl;
+}
 int main(){
     Node * head = new Node(10);
     Node * a = new Node(20);
@@ -35,4 +43,5 @@ int main(){
     b->prev = a;
     Node * tail = b;
     print_normal(head);
+    print_reverse(tail);
 }
