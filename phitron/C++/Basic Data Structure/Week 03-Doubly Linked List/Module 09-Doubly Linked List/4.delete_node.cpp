@@ -56,6 +56,12 @@ void delete_head(Node * &head){
     head->prev = NULL;
     delete deleteNode;
 }
+void delete_tail(Node * &tail){
+    Node * deleteNode = tail;
+    tail = tail->prev;
+    tail->next = NULL;
+    delete deleteNode;
+}
 int main(){
     Node * head = new Node(10);
     Node * a = new Node(20);
@@ -73,7 +79,7 @@ int main(){
 
     // int pos;
     // cin>>pos;
-    delete_head(head);
+    delete_tail(tail);
     // delete_positoin(head,pos);
     print_normal(head);
     print_reverse(tail);
