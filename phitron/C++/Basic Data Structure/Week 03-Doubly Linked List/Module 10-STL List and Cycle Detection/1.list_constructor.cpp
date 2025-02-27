@@ -5,6 +5,10 @@
 #define no cout<<"NO"<<endl;
 using namespace std;
 int main(){
-    list<int> myList;
-    cout<<myList.size()<<endl;
+    // list<int> myList;
+    list<int> myList(10);
+
+    cout<<myList.front()<<endl;
+
+    // cout<<myList.size()<<endl;
 }
