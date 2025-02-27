@@ -9,7 +9,10 @@ int main(){
     // list<int> myList(10);
     list<int> myList(10,5);
 
-    cout<<myList.front()<<endl;
+    // cout<<myList.front()<<endl;
+    for(auto it = myList.begin(); it!=myList.end(); it++){
+        cout<<*it<<endl;
+    }
 
     // cout<<myList.size()<<endl;
 }
