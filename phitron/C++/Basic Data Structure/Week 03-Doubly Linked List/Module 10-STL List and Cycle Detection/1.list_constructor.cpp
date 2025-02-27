@@ -12,8 +12,11 @@ int main(){
     // list<int> list2 = {1,2,3,4,5};
     // list<int> myList(list2);
 
-    int a[5] = {10,20,30,40,50};
-    list<int> myList(a,a+5);
+    // int a[5] = {10,20,30,40,50};
+    // list<int> myList(a,a+5);
+
+    vector<int> v = {100,200,300};
+    list<int> myList(v.begin(),v.end());
 
     // cout<<myList.front()<<endl;
     // for(auto it = myList.begin(); it!=myList.end(); it++){
