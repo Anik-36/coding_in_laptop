@@ -7,7 +7,9 @@ using namespace std;
 int main(){
     // list<int> myList;
     // list<int> myList(10);
-    list<int> myList(10,100);
+    // list<int> myList(10,100);
+    list<int> list2 = {1,2,3,4,5};
+    list<int> myList(list2);
 
     // cout<<myList.front()<<endl;
     // for(auto it = myList.begin(); it!=myList.end(); it++){
