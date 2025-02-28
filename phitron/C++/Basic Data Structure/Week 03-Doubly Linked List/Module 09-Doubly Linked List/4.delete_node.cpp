@@ -50,17 +50,25 @@ void delete_positoin(Node * head,int pos){
     tmp->next->prev = tmp;
     delete deleteNode;
 }
-void delete_head(Node * &head){
+void delete_head(Node * &head, Node * &tail){
     Node * deleteNode = head;
     head = head->next;
-    head->prev = NULL;
     delete deleteNode;
+    if(head == NULL){
+        tail = NULL;
+        return;
+    }
+    head->prev = NULL;
 }
-void delete_tail(Node * &tail){
+void delete_tail(Node* & head, Node * &tail){
     Node * deleteNode = tail;
     tail = tail->prev;
-    tail->next = NULL;
     delete deleteNode;
+    if(tail == NULL){
+        head = NULL;
+        return;
+    }
+    tail->next = NULL;
 }
 int main(){
     Node * head = new Node(10);
