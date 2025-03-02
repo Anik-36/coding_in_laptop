@@ -1,3 +1,6 @@
+/*it is known as Hare and Tortois algorithm */
+
+
 #include<bits/stdc++.h>
 #define endl '\n'
 #define ll long long
@@ -42,3 +45,4 @@ int main(){
         cout<<"Cycle is not Detected"<<endl;
     }
 }
+
