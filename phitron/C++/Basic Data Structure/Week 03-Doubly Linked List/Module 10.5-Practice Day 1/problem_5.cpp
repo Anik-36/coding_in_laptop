@@ -72,5 +72,4 @@ int main(){
         }
     }
     print_normal(head);
-
 }
