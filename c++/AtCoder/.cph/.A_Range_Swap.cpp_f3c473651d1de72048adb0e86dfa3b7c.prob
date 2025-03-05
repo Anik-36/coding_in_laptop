@@ -1,0 +1,1 @@
+{"name":"Local: A_Range_Swap","url":"c:\\Users\\Anik\\Desktop\\Coding\\c++\\AtCoder\\A_Range_Swap.cpp","tests":[{"id":1741187578273,"input":"5 2 3 4 5\n2 2 1 1 1\n","output":"2 1 1 2 1\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Anik\\Desktop\\Coding\\c++\\AtCoder\\A_Range_Swap.cpp","group":"local","local":true}
