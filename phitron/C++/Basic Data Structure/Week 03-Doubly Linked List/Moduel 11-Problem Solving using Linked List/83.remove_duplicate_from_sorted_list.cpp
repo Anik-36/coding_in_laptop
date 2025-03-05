@@ -18,13 +18,13 @@ class Solution {
             while( tmp->next != NULL){
 
                 if(tmp->val == tmp->next->val){
+                    ListNode * deleteNode = tmp->next;
                     tmp->next = tmp->next->next;
+                    delete deleteNode;
                 }
                 if(tmp->next == NULL){
                     return head;
-                }else if(tmp->next->val == tmp->val){
-                    tmp->next = tmp->next->next;
-                }else{
+                }else if(tmp->next->val != tmp->val){
                     tmp = tmp->next;
                 }
             }
