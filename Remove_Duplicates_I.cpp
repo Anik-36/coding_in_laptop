@@ -29,16 +29,21 @@ void print_list(Node * head){
         cout<<tmp->val<<" ";
         tmp = tmp->next;
     }
+    cout<<endl;
 }
-void duplicate(Node * head){
+void remove_duplicate(Node * head){
+    if(head->next == NULL){
+        return;
+    }
     Node * tmp = head;
     while(tmp->next->next != NULL){
         if(tmp->val == tmp->next->val){
             Node * deleteNode = tmp->next;
             tmp->next = tmp->next->next;
             delete deleteNode;
+        }else{
+            tmp = tmp->next;
         }
-        tmp = tmp->next;
     }
     if(tmp->val == tmp->next->val){
         Node * deleteNode = tmp->next;
@@ -57,11 +62,11 @@ int main(){
     }
     for(Node * i = head; i->next != NULL; i = i->next){
         for(Node * j = i->next; j != NULL; j = j->next){
-            if(i->val > j->val){
+            if(i->val >= j->val){
                 swap(i->val,j->val);
             }
         }
     }
-    duplicate(head);
+    remove_duplicate(head);
     print_list(head);
 }
