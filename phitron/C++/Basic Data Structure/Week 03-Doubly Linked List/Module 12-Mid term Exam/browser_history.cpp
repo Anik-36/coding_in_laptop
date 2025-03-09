@@ -1,102 +1,91 @@
-/*need to solve*/
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
+#define endl '\n'
+#define ll long long
+#define yes cout<<"YES"<<endl;
+#define no cout<<"NO"<<endl;
 using namespace std;
-
-class Node {
-public:
-    string val;
-    Node* prev;
-    Node* next;
-    Node(string val) {
-        this->val = val;
-        this->prev = NULL;
-        this->next = NULL;
-    }
+class Node{
+    public:
+        string val;
+        Node* next;
+        Node* prev;
+        Node(string val){
+            this->val = val;
+            this->next = NULL;
+            this->prev = NULL;
+        }
 };
-
-class BrowserHistory {
-public:
-    Node* head;
-    Node* tail;
-    Node* current;
-
-    BrowserHistory() {
-        head = NULL;
-        tail = NULL;
-        current = NULL;
+void insert_list(Node * &head,Node * &tail,string val){
+    Node * newNode = new Node(val);
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;
+        return;
     }
-
-    void insert(string address) {
-        Node* newNode = new Node(address);
-        if (head == NULL) {
-            head = newNode;
-            tail = newNode;
-        } else {
-            tail->next = newNode;
-            newNode->prev = tail;
-            tail = newNode;
+    tail->next = newNode;
+    newNode->prev = tail;
+    tail = newNode;
+}
+Node* visit(Node * head,string val,Node * cur){
+    Node * tmp = head;
+    while(tmp != NULL){
+        if(tmp->val == val){
+            cout<<val<<endl;
+            cur = tmp;
+            return tmp;
+        }
+        tmp = tmp->next;
+    }
+    cout<<"Not Available"<<endl;
+    return cur;
+}
+Node *  prevs(Node * cur){
+    Node * tmp = cur;
+    if(tmp->prev != NULL){
+        tmp = tmp->prev;
+        cur = tmp;
+        cout<<tmp->val<<endl;
+        return cur;
+    }else{
+        cout<<"Not Available"<<endl;
+        return cur;
+    }
+}
+Node * nexts(Node * cur){
+    Node * tmp = cur;
+    if(tmp->next != NULL){
+        tmp = tmp->next;
+        cur = tmp;
+        cout<<tmp->val<<endl;
+        return cur;
+    }else{
+        cout<<"Not Available"<<endl;
+        return cur;
+    }
+}
+int main(){
+    Node * head = NULL;
+    Node * tail = NULL;
+    Node * cur = NULL;
+    while(true){
+        string address;
+        cin>>address;
+        if(address == "end") break;
+        insert_list(head,tail,address);
+    }
+    int q ;
+    cin>>q;
+    while(q--){
+        string a;
+        cin>>a;
+        if(a == "visit"){
+            string ad;
+            cin>>ad;
+            cur = visit(head,ad,cur);
+        }else if(a == "prev"){
+            cur = prevs(cur);
+        }else{
+            cur = nexts(cur);
         }
     }
-
-    void visit(string address) {
-        Node* tmp = head;
-        while (tmp != NULL) {
-            if (tmp->val == address) {
-                current = tmp;
-                cout << address << endl;
-                return;
-            }
-            tmp = tmp->next;
-        }
-        cout << "Not Available" << endl;
-    }
-
-    void next() {
-        if (current != NULL && current->next != NULL) {
-            current = current->next;
-            cout << current->val << endl;
-        } else {
-            cout << "Not Available" << endl;
-        }
-    }
-
-    void prev() {
-        if (current != NULL && current->prev != NULL) {
-            current = current->prev;
-            cout << current->val << endl;
-        } else {
-            cout << "Not Available" << endl;
-        }
-    }
-};
-
-int main() {
-    BrowserHistory browser;
-    string address;
-
-    while (true) {
-        cin >> address;
-        if (address == "end") break;
-        browser.insert(address);
-    }
-
-    int q;
-    cin >> q;
-    string command;
-
-    while (q--) {
-        cin >> command;
-
-        if (command == "visit") {
-            string addr;
-            cin >> addr;
-            browser.visit(addr);
-        } else if (command == "next") {
-            browser.next();
-        } else if (command == "prev") {
-            browser.prev();
-        }
-    }
-
-    return 0;
 }
