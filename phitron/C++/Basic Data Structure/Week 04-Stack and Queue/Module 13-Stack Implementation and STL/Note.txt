@@ -1,2 +1,4 @@
 stack is a theory. and is called ADT -> Abstract Data Structure.
 array , linked list is the main data structure. and is called a container. but stack is not a new data structure. we make some operation in the array, linked list or vector. like - push, pop, top , size, empty.
+
+stack is a higher level data structure. and it is just some operation.
