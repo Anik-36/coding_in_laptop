@@ -20,10 +20,21 @@ class myStack{
         return v.size();
     }
     bool empty(){
-        if(v.size == 0) return true;
+        if(v.size() == 0) return true;
         else return false;
     }
 };
 int main(){
     myStack st;
+    int n;
+    cin>>n;
+    while(n--){
+        int x;
+        cin>>x;
+        st.push(x);
+    }
+    while(!st.empty()){
+        cout<<st.top()<<endl;
+        st.pop();
+    }
 }
