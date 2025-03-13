@@ -1,0 +1,5 @@
+queue is also a higher level data structure. it use other data structure to implement. it is not a new data structure. it is abstract data structure which take other ds for its operation. so we called it a technique.
+
+for queue , array will be not used. because if we want to pop the front value it will fill the first indext continuously and that make the higher time complexity. so we always use singly or doubly linked list for queue.
+if we want to dicreese the time complexity , we just shift the front to next index and the previous index is empty. and it needs the circular queue concept.
+if we want to implement in array we need to take circular queue. because when the 1st value is poped then after a certain time the index will be end and if we want to input some value though we have to use the 1st index to input there. so we have to connect the 1st index to last value. it will be a concept of solving this probelm.
