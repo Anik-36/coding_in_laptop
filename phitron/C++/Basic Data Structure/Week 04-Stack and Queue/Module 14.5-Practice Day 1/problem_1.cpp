@@ -32,9 +32,11 @@ class Node{
     public:
         int val;
         Node* next;
+        Node* prev;
         Node(int val){
             this->val = val;
             this->next = NULL;
+            this->prev = NULL;
         }
 };
 class myStack{
@@ -52,16 +54,56 @@ class myStack{
                 return ;
             }
             tail->next = newNode;
+            newNode->prev = tail;
             tail = newNode;
         }
         int size(){
             return sz;
         }
-        bool check(Node * head1, Node * head2){
-            Node * tmp1 = head1;
-            Node * tmp2 = head2;
+        void pop(){
+            Node * deleteNode = tail;
+            tail = tail->prev;
+            if(tail == NULL){
+                head = NULL;
+                return;
+            }
+            tail->next = NULL;
+            delete deleteNode;
+        }
+        int top(){
+            int k = tail->val;
+            pop();
+            return k;
         }
 };
 int main(){
+    int n;
+    cin>>n;
+    myStack st1;
+    while(n--){
+        int x;
+        cin>>x;
+        st1.push(x);
+    }
+    int m;
+    cin>>m;
+    myStack st2;
+    while(m--){
+        int x;
+        cin>>x;
+        st2.push(x);
+    }
+    bool flag = true;
 
+    if(st1.size() == st2.size()){
+        m = st1.size();
+        while(m--){
+            if(st1.top() != st2.top()){
+                flag = false;
+                break;
+            }
+        }
+        if(flag == true) yes
+        else no
+    }else no
 }
