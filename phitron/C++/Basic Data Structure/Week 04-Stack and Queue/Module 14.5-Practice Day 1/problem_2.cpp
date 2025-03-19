@@ -19,3 +19,51 @@ NO
 YES
 
 */
+
+#include<bits/stdc++.h>
+#define endl '\n'
+#define ll long long
+#define yes cout<<"YES"<<endl;
+#define no cout<<"NO"<<endl;
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    stack<int> st;
+    while(n--){
+        int x;
+        cin>>x;
+        st.push(x);
+    }
+    int sz1 = st.size();
+    int m;
+    cin>>m;
+    queue<int> q;
+    while(m--){
+        int x;
+        cin>>x;
+        q.push(x);
+    }
+    int sz2 = q.size();
+    bool flag = true;
+    if(sz1 == sz2){
+        n = sz2;
+        // cout<<n<<" ";
+        while(n--){
+            if(q.front() != st.top()){
+                flag = false;
+                break;
+            }
+            st.pop();
+            q.pop();
+        }
+        if(flag == true){
+            yes
+        }else{
+            no
+        }
+    }else{
+        no
+    }
+
+}
