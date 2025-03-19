@@ -48,7 +48,6 @@ int main(){
     bool flag = true;
     if(sz1 == sz2){
         n = sz2;
-        // cout<<n<<" ";
         while(n--){
             if(q.front() != st.top()){
                 flag = false;
