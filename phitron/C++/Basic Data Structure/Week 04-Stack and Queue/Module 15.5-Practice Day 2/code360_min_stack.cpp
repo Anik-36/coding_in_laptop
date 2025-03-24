@@ -31,23 +31,24 @@ class minStack
 		{
 			// Write your code here.
 			Node * newNode = new Node(val);
-			if(head == NULL and head2 == NULL){
+			if(head == NULL ){
 				head = newNode;
-				head2 = newNode;
 				tail = newNode;
-				tail2 = newNode;
-				cout<<" head er kaj hoice"<<endl;
+				if(head2 == NULL){
+					head2 = new Node(val);
+					tail2 = head2;
+				}
 				return;
 			}
+			Node * newNode2 = new Node(val);
 			if(val<=tail2->val){
-				tail2->next = newNode;
-				newNode->prev = tail2;
-				tail2 = newNode;
+				tail2->next = newNode2;
+				newNode2->prev = tail2;
+				tail2 = newNode2;
 			}
 			tail->next = newNode;
 			newNode->prev = tail;
 			tail = newNode;
-				cout<<" tail er kaj hoice"<<endl;
 		}
 
 		// Function to remove the top element of the stack.
@@ -63,11 +64,21 @@ class minStack
 			if(tail->val == tail2->val){
 				Node * deleteNode2 = tail2;
 				tail2 = tail2->prev;
-				tail2->next = NULL;
+				if(tail2 != NULL){
+					tail2->next = NULL;
+				}
+				else{
+					head2 = NULL;
+				}
 				delete deleteNode2;
 			}
 			tail = tail->prev;
-			tail->next = NULL;
+			if(tail != NULL){
+				tail->next = NULL;
+			}
+			else{
+				head = NULL;
+			}
 			delete deleteNode;
 			return x;
 		}
