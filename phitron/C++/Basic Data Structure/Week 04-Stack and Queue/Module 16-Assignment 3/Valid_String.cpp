@@ -35,3 +35,17 @@ int main(){
 
     }
 }
+
+
+
+
+/*
+        char c;
+        while(cin>>c){
+            s.push(c);
+        }
+        while(!s.empty()){
+            cout<<s.top();
+            s.pop();
+        }
+        cout<<endl;*/
