@@ -45,5 +45,5 @@ int main(){
     d->right = g;
 
     //call
-    preorder(root);
+    preorder(root); // root->left->right
 }
