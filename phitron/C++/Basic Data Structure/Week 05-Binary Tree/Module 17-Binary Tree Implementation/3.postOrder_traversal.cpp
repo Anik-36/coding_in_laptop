@@ -39,7 +39,7 @@ int main(){
     a->left = c;
     a->right = h;
     b->right = d;
-    c->left = e;
+    c->right = e;
     h->right = i;
     d->left = f;
     d->right = g;
