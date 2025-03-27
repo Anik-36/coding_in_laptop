@@ -15,44 +15,6 @@ class Node{
             this->right = NULL;
         }
 };
-// Node *  input_tree(){
-//     int val;
-//     cin>>val;
-//     Node * root;
-//     if(val == -1) root = NULL;
-//     else{
-//         root = new Node(val);
-//     }
-//     queue<Node*> q;
-//     if(root) q.push(root);
-//     while(!q.empty()){
-
-//         // 1. ber kore ano
-//         Node * p = q.front();
-//         q.pop();
-
-//         // 2. jabotiyo joto kaj ache koro
-
-//         int l,r ;
-//         cin>>l>>r;
-//         Node * myLeft, * myRight;
-//         if(l == -1) myLeft = NULL;
-//         else myLeft = new Node(l);
-
-//         if(r == -1) myRight = NULL;
-//         else myRight = new Node(r);
-
-//         // root er sathe left right connect kore dew
-//         p->left = myLeft;
-//         p->right = myRight;
-
-//         // 3. child gulo push koro
-
-//         if(p->left) q.push(p->left);
-//         if(p->right) q.push(p->right);
-//     }
-//     return root;
-// }
 Node * input_tree(){
     int val;
     cin>>val;
