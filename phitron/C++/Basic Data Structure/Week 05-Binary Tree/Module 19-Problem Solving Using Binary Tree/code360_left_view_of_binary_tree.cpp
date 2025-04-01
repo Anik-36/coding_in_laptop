@@ -27,6 +27,7 @@ vector<int> getLeftView(TreeNode<int> *root)
     queue<pair<TreeNode<int> * , int > > q;
     bool fr[3005] = {false};
     vector<int> v;
+    // q.push(make_pair(root,1));
     if(root) q.push({root,1});
     while(!q.empty()){
         pair<TreeNode<int>*,int> p = q.front();
