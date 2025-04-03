@@ -9,58 +9,30 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-vector<int> v1;
-vector<int> v2;
+int f = 0;
 class Solution {
 public:
-   void preorder(TreeNode* root, int x){
-       if(root == NULL) return;
-       if(x == 1){
-           v1.push_back(root->val);
-       }else{
-           v2.push_back(root->val);
-       }
-       preorder(root->left,x);
-       preorder(root->right,x);
-   }
-   void inorder(TreeNode* root, int x){
-       if(root == NULL) return;
-       inorder(root->left,x);
-       if(x == 1){
-           v1.push_back(root->val);
-       }else{
-           v2.push_back(root->val);
-       }
-       inorder(root->right,x);
-   }
-   bool isSameTree(TreeNode* p, TreeNode* q) {
-       v1.clear();
-       v2.clear();
-       preorder(p,1);
-       preorder(q,2);
-       for(auto a : v1){
-           cout<<a<<" ";
-       }
-       cout<<endl;
-       for(auto a : v2){
-           cout<<a<<" ";
-       }
-       cout<<endl;
-       if(v1==v2){
-           v1.clear();
-           v2.clear();
-           inorder(p,1);
-           inorder(q,2);
-           for(auto a : v1){
-               cout<<a<<" ";
-           }
-           cout<<endl;
-           for(auto a : v2){
-               cout<<a<<" ";
-           }
-           if(v1==v2){
-               return true;
-           }else return false;
-       }else return false;
-   }
+    void preorder(TreeNode* root1,TreeNode* root2 ){
+        if(root1 == NULL and root2 == NULL){
+            return;
+        }
+        if(root1 == NULL and root2 != NULL){
+            f = 1;
+            return;
+        }else if(root1!=NULL and root2 == NULL){
+            f = 1;
+            return;
+        }
+        if(root1 != NULL and root2 != NULL){
+            if(root1->val != root2->val) f = 1;
+        }
+        preorder( root1->left , root2->left);
+        preorder(root1->right,root2->right);
+    }
+    bool isSameTree(TreeNode* p, TreeNode* q) {
+        f = 0;
+        preorder(p,q);
+        if(f == 1) return false;
+        else return true;
+    }
 };
