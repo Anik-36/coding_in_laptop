@@ -26,3 +26,12 @@ int main(){
 
     for( int val : v) cout<<val<<" ";
 }
+
+//Time complexity : for 1 element = O(log(N));
+// because it traverse only the height of the tree. so h = Log(N);
+//Time complexity : for N element = O(Nlog(N));
+
+/*
+but if a vector will be sorted the minimum time complexity for 1 element will be O(NLog(N))
+but for N element  = O(N^2Log(N))
+*/
