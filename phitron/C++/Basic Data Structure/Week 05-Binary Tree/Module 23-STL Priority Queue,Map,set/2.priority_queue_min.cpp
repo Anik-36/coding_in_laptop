@@ -5,7 +5,7 @@
 #define no cout<<"NO"<<endl;
 using namespace std;
 int main(){
-    priority_queue<int,vector<int>,greater<int>> pq;
+    priority_queue<int,vector<int>,greater<int>> pq; // priority queue doesn't work with function. thats why greater<int>() is not written. it works with direct class.
     while(true){
         int c;
         cin>>c;
