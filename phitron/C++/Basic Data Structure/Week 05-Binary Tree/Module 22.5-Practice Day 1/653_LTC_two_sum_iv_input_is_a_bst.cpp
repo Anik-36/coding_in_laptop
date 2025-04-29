@@ -1,7 +1,7 @@
 /**
  *
  * https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/
- *
+ /**
  * Definition for a binary tree node.
  * struct TreeNode {
  *     int val;
@@ -14,7 +14,7 @@
  */
 class Solution {
     public:
-        vector tree_array(TreeNode * root){
+        vector<int> tree_array(TreeNode * root){
             queue<TreeNode * > q1;
             vector<int> v;
             if(root){
@@ -25,13 +25,13 @@ class Solution {
                 TreeNode * p = q1.front();
                 q1.pop();
 
-                if(p.left){
-                    q1.push(p.left);
-                    v.push_back(p.left->val);
+                if(p->left){
+                    q1.push(p->left);
+                    v.push_back(p->left->val);
                 }
-                if(p.right){
-                    q1.push(p.right);
-                    v.push_back(p.right->val);
+                if(p->right){
+                    q1.push(p->right);
+                    v.push_back(p->right->val);
                 }
             }
             return v;
@@ -53,7 +53,7 @@ class Solution {
                 }else if(v[i]+v[j]<k){
                     i++;
                 }else if(v[i]+v[j]>k){
-                    j++;
+                    j--;
                 }
             }
             return flag;
