@@ -1,5 +1,3 @@
-Jemin 40 9
-Rahim 9 82
-Mashrafee 2 83
-Sakib 11 91
-Anik 1 100
+sakib al hasan 75
+shamim hossain patowary 19
+tamim iqbal 28
