@@ -18,8 +18,8 @@ class Student{
 class cmp{
     public:
         bool operator()(Student a, Student b){
-            if(a.number > b.number) return true;
-            else if(a.number < b.number) return false;
+            if(a.number > b.number) return true; // true means it need to be changed. we need the left vlaue should be smaller than right.
+            else if(a.number < b.number) return false; // flase means it doen't need any change. the number is in correct position.
             else{
                 if(a.roll > b.roll) return true;
                 else return false;
@@ -29,7 +29,7 @@ class cmp{
 int main(){
     int n;
     cin>>n;
-    priority_queue<Student,vector<Student>,cmp> pq;
+    priority_queue<Student,vector<Student>,cmp> pq; // if compare get true it demand to be changed.
     for(int i = 0 ; i<n; i++){
         string name;
         int roll;
