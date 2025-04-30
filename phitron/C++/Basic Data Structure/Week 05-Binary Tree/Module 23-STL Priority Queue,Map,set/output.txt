@@ -1,5 +1,5 @@
-5
-8
-8
-8
-20
+Jemin 40 9
+Rahim 9 82
+Mashrafee 2 83
+Sakib 11 91
+Anik 1 100
