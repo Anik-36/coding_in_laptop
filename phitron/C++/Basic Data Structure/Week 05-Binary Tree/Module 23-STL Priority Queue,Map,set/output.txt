@@ -1,9 +1,8 @@
-cricket 3
-football 1
-he 1
-i 1
-love 3
-loves 1
-they 1
-we 1
+2
 3
+5
+12
+18
+28
+37
+100
