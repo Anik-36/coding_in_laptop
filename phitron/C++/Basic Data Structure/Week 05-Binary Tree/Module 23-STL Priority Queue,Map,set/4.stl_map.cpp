@@ -8,6 +8,7 @@ int main(){
     map<string,int> mp;
 
     mp["anik"] = 36; // O(log(N))
+    mp["anik"] = 4000; // it just update the value not created another location.
     mp["jemin"] = 40;
 
     // // inserting

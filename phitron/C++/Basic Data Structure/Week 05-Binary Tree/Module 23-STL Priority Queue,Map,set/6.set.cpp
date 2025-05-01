@@ -11,7 +11,7 @@ int main(){
 
     sorting
     searching
-    duplicates removing
+    duplicates removing ***
     */
     set<int> s;
     int n;
