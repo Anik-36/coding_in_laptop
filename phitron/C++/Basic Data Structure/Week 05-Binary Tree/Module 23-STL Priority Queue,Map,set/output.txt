@@ -1,2 +1,4 @@
-1
-Ase
+anik 40000
+jemin 40
+40000
+ase
