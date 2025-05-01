@@ -7,7 +7,12 @@ using namespace std;
 int main(){
     /* set is a bst. and it gives the value in In-Order formate that means lower to higher. it removes the duplicate values.
 
-    it makes operation in balanced bst. so all the operation will be in O(logn)*/
+    it makes operation in balanced bst. so all the operation will be in O(logn)
+
+    sorting
+    searching
+    duplicates removing
+    */
     set<int> s;
     int n;
     cin>>n;
