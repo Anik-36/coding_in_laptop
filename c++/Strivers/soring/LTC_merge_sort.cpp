@@ -38,3 +38,6 @@ class Solution {
             return a;
         }
     };
+
+    // time complexity O(nlogn). 
+    // space complexity O(n) because of temporary array is highest take space of n size.
