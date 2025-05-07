@@ -1,7 +1,4 @@
 /**
- *
- * https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
- * 
  * Definition for a binary tree node.
  * struct TreeNode {
  *     int val;
@@ -14,11 +11,7 @@
  */
 class Solution {
     public:
-        void print_vector(vector<int> v){
-            for(int val : v){
-                cout<<val<<" ";
-            }
-        }
+        TreeNode * root = NULL;
         void insert_into_bst(TreeNode * &root, int x){
             if(root == NULL){
                 root = new TreeNode(x);
@@ -39,19 +32,15 @@ class Solution {
             }
             return;
         }
+        void sort_array(vector<int> &v,int l,int r){
+            if(l>r) return;
+            int mid = (l+r)/2;
+            insert_into_bst(root,v[mid]);
+            sort_array(v,l,mid-1);
+            sort_array(v,mid+1,r);
+        }
         TreeNode* sortedArrayToBST(vector<int>& v) {
-            int mid = v.size()/2;
-            TreeNode * root = new TreeNode(v[mid]);
-            queue<int> q;
-            for(int i = 0 ; i<v.size(); i++){
-                if(i == mid) continue;
-                q.push(v[i]);
-            }
-            while(!q.empty()){
-                insert_into_bst( root , q.front() );
-                q.pop();
-            }
-            print_vector(v);
+            sort_array(v,0,v.size()-1);
             return root;
         }
     };
