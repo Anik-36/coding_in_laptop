@@ -1,3 +1,5 @@
+/*https://vjudge.net/contest/715468#problem/G
+*/
 #include<bits/stdc++.h>
 #include<algorithm>
 #define endl '\n'
