@@ -1,0 +1,10 @@
+O(1) = constant
+O(logn) = logarithmic
+O(root(N)) = square root
+O(N) = linear
+
+O(Nlogn)
+
+O(N^2) = quadratic
+O(N^3) = cubic
+O(2^N) = exponential
