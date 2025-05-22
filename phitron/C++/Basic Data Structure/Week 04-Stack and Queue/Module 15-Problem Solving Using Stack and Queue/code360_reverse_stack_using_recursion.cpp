@@ -17,3 +17,8 @@ void reverseStack(stack<int> &s) {
         cp.pop();
     }
 }
+
+
+/* always think like what we can solve with the recursion
+1st we have to do with the single element. and pass the rest element into the recursion . and recursion can do for us. then what we have to do with the single element just do it. so the solution will be ready.
+*/
