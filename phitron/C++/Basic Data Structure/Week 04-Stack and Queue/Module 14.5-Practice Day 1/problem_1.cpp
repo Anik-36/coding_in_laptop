@@ -72,7 +72,6 @@ class myStack{
         }
         int top(){
             int k = tail->val;
-            pop();
             return k;
         }
 };
@@ -102,6 +101,8 @@ int main(){
                 flag = false;
                 break;
             }
+            st1.pop();
+            st2.pop();
         }
         if(flag == true) yes
         else no
