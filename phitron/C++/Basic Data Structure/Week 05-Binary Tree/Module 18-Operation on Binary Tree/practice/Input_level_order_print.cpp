@@ -7,18 +7,18 @@ using namespace std;
 class Node{
     public:
         int val;
-        Node * left;
-        Node * right;
+        Node* left;
+        Node* right;
         Node(int val){
             this->val = val;
-            this->left = left;
-            this->right = right;
+            this->left = NULL;
+            this->right = NULL;
         }
 };
 Node* input_binary(){
     int val;
     cin>>val;
-    Node * root = NULL;
+    Node * root ;
     if(val == -1){
         root = NULL;
     }else{
@@ -32,7 +32,7 @@ Node* input_binary(){
 
         int l,r;
         cin>>l>>r;
-        Node * myLeft,*myRight;
+        Node * myLeft,* myRight;
         if(l==-1) myLeft = NULL;
         else myLeft = new Node(l);
         if(r==-1) myRight = NULL;
@@ -41,8 +41,8 @@ Node* input_binary(){
         p->left = myLeft;
         p->right = myRight;
 
-        if(p->left) q.push(myLeft);
-        if(p->right) q.push(myRight);
+        if(myLeft) q.push(myLeft);
+        if(myRight) q.push(myRight);
     }
     return root;
 }
