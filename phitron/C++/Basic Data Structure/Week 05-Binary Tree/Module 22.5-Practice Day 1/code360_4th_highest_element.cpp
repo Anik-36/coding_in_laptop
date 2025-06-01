@@ -1,4 +1,5 @@
-//https://www.naukri.com/code360/problems/fourth-largest-element-in-the-array_1792782#include<bits/stdc++.h>#include<bits/stdc++.h>
+//https://www.naukri.com/code360/problems/fourth-largest-element-in-the-array_1792782#include<bits/stdc++.h>
+#include<bits/stdc++.h>
 int getFourthLargest(int arr[], int n)
 {
     // Write your code here.
