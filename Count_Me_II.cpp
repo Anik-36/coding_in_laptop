@@ -12,17 +12,21 @@ int main(){
         cin>>n;
         int a[n];
         map<int,int> mp;
-        int h = INT_MIN;
+        priority_queue<int> pq;
+        // int h = INT_MIN;
         int mx = INT_MIN;
         for(int i = 0 ; i<n; i++){
             cin>>a[i];
             mp[a[i]]++;
             if(mp[a[i]]>mx) mx = mp[a[i]];
+            pq.push(a[i]);
         }
-        sort(a,a+n,greater<int>());
-        for(int i = 0; i<n; i++){
-            if(mp[a[i]] == mx){
-                cout<<a[i]<<" "<<mp[a[i]]<<endl;
+        // sort(a,a+n,greater<int>());
+        while(!pq.empty()){
+            int t = pq.top();
+            pq.pop();
+            if(mp[t] == mx){
+                cout<<t<<" "<<mp[t]<<endl;
                 break;
             }
         }
