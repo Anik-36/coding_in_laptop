@@ -16,3 +16,24 @@ class Solution {
     };
 
     //https://leetcode.com/problems/missing-number/description/
+
+
+    /*
+    class Solution {
+    public:
+    int missingNumber(vector<int>& a) {
+        sort(a.begin(),a.end());
+        int ans = INT_MIN;
+        for(int i = 0; i<a.size(); i++){
+            if( i != a[i]) {
+                ans = i;
+                break;
+            }
+        }
+        if(ans < 0){
+            ans = a.size();
+        }
+        return ans;
+    }
+};
+    */
