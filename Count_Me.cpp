@@ -8,23 +8,23 @@ int main(){
     int t;cin>>t;
     cin.ignore();
     while(t--){
-        int mx = INT_MIN;
         string sentence;
         getline(cin,sentence);
         map<string,int> mp;
         string word;
         stringstream ss(sentence);
+        string ans;
+        int ct;
+        int mx = INT_MIN;
         while(ss>>word){
             mp[word]++;
+            if(mp[word]>mx ){
+                ans = word;
+                ct = mp[word];
+            }
             if(mp[word]>mx) mx = mp[word];
 
         }
-        for(auto it = mp.begin(); it!=mp.end(); it++){
-            // if(it->second == mx){
-            //     cout<<it->first<<" "<<it->second<<endl;
-            //     break;
-            // }
-            cout<<it->first<<" "<<it->second<<endl;
-        }
+        cout<<ans<<" "<<ct<<endl;
     }
 }
