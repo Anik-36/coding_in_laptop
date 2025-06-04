@@ -51,3 +51,7 @@ int main(){
         cout<<a[i]<<" ";
     }
 }
+
+/*
+Time complexity: O(Nlog(N))
+*/
