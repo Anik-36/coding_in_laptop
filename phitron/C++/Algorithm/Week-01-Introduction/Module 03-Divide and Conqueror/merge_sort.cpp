@@ -18,11 +18,11 @@ void merge(int l, int r, int mid){
     for(int i = mid+1,j = 0; i<=r; i++,j++){
         R[j] = a[i];
     }
-    L[left_size] = INT_MAX;
-    R[right_size] = INT_MAX;
+    L[left_size] = INT_MIN;
+    R[right_size] = INT_MIN;
     int lp = 0, rp = 0;
     for(int i = l; i<=r; i++){
-        if(L[lp]<=R[rp]){
+        if(L[lp]>=R[rp]){
             a[i] = L[lp];
             lp++;
         }else{
