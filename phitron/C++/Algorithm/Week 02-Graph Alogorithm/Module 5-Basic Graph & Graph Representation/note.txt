@@ -22,3 +22,16 @@ Tree:
 2. # E = # N -1
     number of edges = number of vertices - 1
     |E| = |N| - 1
+
+
+
+
+There are many types of Representaion in Graph.
+1. Adjacency matrix
+2. Adjacency list
+3. edges of list
+
+Adjacency matrix:
+it need N^2 but if we want to see any connection between any node we can easily find it in o(n). it is good for dense node.
+Adjacency list:
+it need less time but if we want to see any connection between any node we need to traverse all the list element . it is good for sparse( halka ) node. example : tree.
