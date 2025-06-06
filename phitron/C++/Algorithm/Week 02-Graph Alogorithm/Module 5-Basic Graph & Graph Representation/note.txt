@@ -4,3 +4,14 @@ The terms of the Graphs are:
 2. Representaion
 3. Traversal
 4. Graph algorithms
+
+
+Graph has many types:
+1. by Direction->
+    1.Directed Graph
+    2.Undirected Graph
+2. by Weight->
+    1.Weighted
+    2.Unweighted
+and others (directed Weighted , directed Unweighted, Undirected Weighted, Undirected Unweighted etc.)
+special graph is tree.
