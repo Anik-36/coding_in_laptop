@@ -1,0 +1,6 @@
+Graph is a linear data structure. It is not sequential.
+The terms of the Graphs are:
+1. Terminologies
+2. Representaion
+3. Traversal
+4. Graph algorithms
