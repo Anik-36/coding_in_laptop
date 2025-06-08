@@ -1,9 +1,25 @@
-Visiting Node : 1
-Visiting Node : 2
-Visiting Node : 3
-Visiting Node : 4
-Visiting Node : 5
-Visiting Node : 6
-Visiting Node : 7
-Visiting Node : 8
-Visiting Node : 9
+Depth of Node 1 : 0
+Depth of Node 2 : 1
+Depth of Node 3 : 1
+Depth of Node 4 : 2
+Depth of Node 5 : 2
+Depth of Node 6 : 3
+Depth of Node 7 : 3
+Depth of Node 8 : 4
+Depth of Node 9 : 2
+Depth of Node 10 : 1
+Depth of Node 11 : 2
+Depth of Node 12 : 2
+*********************
+Height of Node 1 : 4
+Height of Node 2 : 3
+Height of Node 3 : 1
+Height of Node 4 : 0
+Height of Node 5 : 2
+Height of Node 6 : 1
+Height of Node 7 : 0
+Height of Node 8 : 0
+Height of Node 9 : 0
+Height of Node 10 : 1
+Height of Node 11 : 0
+Height of Node 12 : 0
