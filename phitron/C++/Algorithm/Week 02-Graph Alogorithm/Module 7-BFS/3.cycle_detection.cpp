@@ -8,7 +8,7 @@ const int N = 1e3+10;
 vector<int> a[N];
 bool visited[N];
 
-void dfs(int u, int p = -1){
+bool dfs(int u, int p = -1){
     bool isCycle = false;
     visited[u] = true;
     for(int v: a[u]){
