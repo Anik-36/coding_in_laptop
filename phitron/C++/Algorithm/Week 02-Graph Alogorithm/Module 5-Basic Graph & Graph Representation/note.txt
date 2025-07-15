@@ -33,6 +33,9 @@ There are many types of Representaion in Graph.
 
 Adjacency matrix:
 it need N^2 but if we want to see any connection between any node we can easily find it in o(n). it is good for dense node.
+karon dense graph a node besi thakbe. tai amader khuje pete onek time lagar kotha. but matrix k direct node er nam bole dile oikhane jeye O(1) a khuje dite parbe j connection ase kina. ejonno dense graph a matrix valo.
+
 Adjacency list:
 it need less time but if we want to see any connection between any node we need to traverse all the list element . it is good for sparse( halka ) node. example : tree.
 Adjacency list is come out when we have 10^5 nodes and need large number of array that can't sort out easily. then the list will help to do the work easily.
+we use it for tree always.
