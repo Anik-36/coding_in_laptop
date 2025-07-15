@@ -35,3 +35,4 @@ Adjacency matrix:
 it need N^2 but if we want to see any connection between any node we can easily find it in o(n). it is good for dense node.
 Adjacency list:
 it need less time but if we want to see any connection between any node we need to traverse all the list element . it is good for sparse( halka ) node. example : tree.
+Adjacency list is come out when we have 10^5 nodes and need large number of array that can't sort out easily. then the list will help to do the work easily.
