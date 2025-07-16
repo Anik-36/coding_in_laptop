@@ -14,24 +14,9 @@ bool dfs(int u, int p = -1){
     for(int v: a[u]){
         if(v == p) continue;
         if(visited[v]) return true;
-        isCycle = isCycle | dfs(v);
+        isCycle = isCycle | dfs(v,u);
     }
     return isCycle;
-}
-void bfs(int s){
-    visited[s] = true;
-    queue<int> q;
-    q.push(s);
-    while(!q.empty()){
-        int u = q.front();
-        q.pop();
-
-        for(int v : a[u]){
-            if(visited[v]) continue;
-            q.push(v);
-            visited[v] = true;
-        }
-    }
 }
 int main(){
     int n,m;
