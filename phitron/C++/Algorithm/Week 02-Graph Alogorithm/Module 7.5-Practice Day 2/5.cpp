@@ -66,6 +66,7 @@ int main(){
         for(int v : c[i]){
             cout<<v<<" ";
         }
+        cout<<endl;
     }
 
 }

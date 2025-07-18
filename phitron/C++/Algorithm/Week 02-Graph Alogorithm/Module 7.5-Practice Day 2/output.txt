@@ -1,2 +1,5 @@
 4
-Component 1: 1 2 3 4 Component 2: 5 6 Component 3: 7 Component 4: 8 
+Component 1: 1 2 3 4 
+Component 2: 5 6 
+Component 3: 7 
+Component 4: 8 
