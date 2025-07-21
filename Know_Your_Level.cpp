@@ -37,6 +37,7 @@ int main(){
         s.insert(v);
 
     }
+    memset(level,-1,N);
     bfs(*(s.begin()));
     int l;
     cin>>l;
