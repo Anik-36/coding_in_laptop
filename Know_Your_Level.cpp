@@ -37,7 +37,7 @@ int main(){
         s.insert(v);
 
     }
-    bfs(0);
+    bfs(*(s.begin()));
     int l;
     cin>>l;
     bool flag = false;
