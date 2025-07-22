@@ -28,6 +28,7 @@ void bfs(int s){
         }
     }
 }
+// graph ta jodi weighted na hoy tahole bfs diye ber kora jabe. nahole onno algorithm use korte hobe.
 int main(){
     int n,m;
     cin>>n>>m;
