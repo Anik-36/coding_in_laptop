@@ -1,0 +1,2 @@
+limitations of  diajkstras algorithm:
+jodi kono edge er value negative hoy se khetre age jodi kom valuer jnno kono edge visit hoye jay sei negative er jonno porer bar r o kom value pawa jeto but kom valuer jonno sei node ta visited hoye jabe tai r oita er theke kom value ta pabe na. so negative edge er khetre diajkstras algorithm kaj kore na.
