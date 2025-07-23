@@ -6,6 +6,7 @@
 using namespace std;
 
 typedef pair<int,int> pii;
+// using pii = pair<int,int> ; ( another way to use instead tyepdef)
 const int N = 1e3+10;
 vector<pii> adlist[N];
 const int INF = 1e9+10;
