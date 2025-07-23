@@ -12,7 +12,7 @@ const int INF = 1e9+10;
 bool visited[N];
 vector<int> dist(N,INF);
 
-void diajkstra(int source){
+void dijkstra(int source){
     priority_queue<pii, vector<pii>, greater<pii>> p;
     dist[source] = 0;
     p.push({dist[source],source});
@@ -40,7 +40,7 @@ int main(){
         adlist[u].push_back({v,w});
         adlist[v].push_back({u,w});
     }
-    diajkstra(1);
+    dijkstra(1);
     for(int i = 1; i<=n ; i++){
         cout<<"Distance of "<<i<<" : "<<dist[i]<<endl;
     }
