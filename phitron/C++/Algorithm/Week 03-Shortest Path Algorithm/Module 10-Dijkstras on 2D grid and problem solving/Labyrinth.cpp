@@ -60,6 +60,7 @@ int main(){
         cout<<level[di][dj]<<endl;
     }else{
         cout<<"NO"<<endl;
+        return 0;
     }
     vector<pii> path;
     pii curr = {di,dj};
