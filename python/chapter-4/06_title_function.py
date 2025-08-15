@@ -1,3 +1,3 @@
 name = "hello world"
-name.title()
-print(name)
+a = name.title() # it will make the 1st leeter of each word uppercase
+print(a)
