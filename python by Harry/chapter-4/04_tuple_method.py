@@ -1,0 +1,5 @@
+a = (1,3,4,3,19,3,3.6,"anik",False)
+no = a.count(3)
+print(no)
+i = a.index(3)
+print(i)
