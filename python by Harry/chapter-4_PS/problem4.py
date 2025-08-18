@@ -1,0 +1,2 @@
+list = [3,6,1,5]
+print(sum(list))
