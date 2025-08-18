@@ -3,3 +3,4 @@ marks = {
     "Anik" : 69,
     "Rohan" : 33
 }
+print(marks,type(marks))
