@@ -21,6 +21,12 @@ int main()
         {
             cin >> v[i];
         }
+        if (n == 1)
+        {
+            cout << "Case " << cs << ": " << 1 << endl;
+            cs++;
+            continue;
+        }
         for (int i = 0; i < n; i++)
         {
             for (int j = i - 1, k = i + 1; (j >= 0 or k < n); j--, k++)
