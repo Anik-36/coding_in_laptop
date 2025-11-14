@@ -1,2 +1,4 @@
-20 11
-8 4
+Case 1: 3
+Case 2: 6
+Case 3: Humanity is doomed!
+Case 4: 1

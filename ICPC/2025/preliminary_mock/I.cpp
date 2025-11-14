@@ -1,40 +1,58 @@
 #include <bits/stdc++.h>
+#define endl '\n'
+#define ll long long
+#define yes cout << "YES" << endl;
+#define no cout << "NO" << endl;
 using namespace std;
-
 int main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     int t;
     cin >> t;
-
+    int cs = 1;
     while (t--)
     {
-        string s;
-        cin >> s;
-        int sz = s.size();
-        int nct = 0;
-
-        int l = 0;
-        for (int i = 0; i < s.size(); i++)
+        ll n;
+        cin >> n;
+        vector<ll> v(n);
+        bool flag = false;
+        for (int i = 0; i < n; i++)
         {
-            if (i + 1 < sz && s[i] == '\\' && s[i + 1] == '0')
+            cin >> v[i];
+        }
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = i - 1, k = i + 1; (j >= 0 or k < n); j--, k++)
             {
+                if (j >= 0)
+                {
+                    if (v[j] >= v[i])
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (k < n)
+                {
+                    if (v[k] <= v[i])
+                    {
+                        flag = false;
+                        break;
+                    }
+                }
+                flag = true;
+            }
+            if (flag)
+            {
+                cout << "Case " << cs << ": " << i + 1 << endl;
                 break;
             }
-            l++;
         }
-        for (int i = 0; i < s.size(); i++)
+        if (!flag)
         {
-            if (i + 1 < sz && s[i] == '\\' && s[i + 1] == '0')
-            {
-                nct++;
-                i++;
-            }
-            else
-            {
-                nct++;
-            }
+            cout << "Case " << cs << ": " << "Humanity is doomed!" << endl;
         }
-        cout << nct + 1 << " " << l << "\n";
-        // cout<< szz<<endl;
+        cs++;
     }
 }
