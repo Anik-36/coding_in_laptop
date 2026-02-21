@@ -64,7 +64,13 @@ footer {
   background-color: rgb(77, 0, 140);
   text-align: center;
   padding: 0 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-footer p {
+footer img {
+  width: 70px;
+}
+footer span {
   color: #ffffff;
 }
