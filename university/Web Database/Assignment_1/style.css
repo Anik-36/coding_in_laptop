@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+  background-image: url(image/back.webp);
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-element {
+  flex-direction: column;
+}
+.header h1 {
+  margin-top: 0;
+}
+
+.main-element {
+  display: flex;
+  min-height: 50vh;
+}
+
+.main-element .sidebar {
+  flex: 1;
+  background-color: yellow;
+  padding: 30px 0 0 30px;
+}
+.main-element .sidebar li a {
+  text-decoration: none;
+}
+.main-element .student-info {
+  flex: 3;
+  background-color: #5db7f0;
+  padding: 25px;
+}
+.main-element .student-info {
+  text-align: center;
+}
+.main-element .student-info table {
+  flex: 3;
+  background-color: #000000;
+  width: 100%;
+}
+.main-element .student-info tr {
+  flex: 3;
+  background-color: #ffffff;
+}
+.main-element .student-info th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: rgb(77, 0, 140);
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+footer p {
+  color: #ffffff;
+}
