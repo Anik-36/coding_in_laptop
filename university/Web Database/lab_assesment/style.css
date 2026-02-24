@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  background-color: pink;
+  padding: 20px;
+}
+.main-element {
+  display: flex;
+  flex-direction: row;
+}
+.main-element .side-bar {
+  flex: 1;
+  background-color: yellow;
+  padding: 0 0 40px 20px;
+}
+.main-element .side-bar a {
+  text-decoration: none;
+}
+.main-element .student-info {
+  flex: 3;
+  width: 100%;
+  background-color: #9ebbf5;
+  padding: 0 20px 80px;
+}
+.main-element .student-info h2 {
+  text-align: center;
+}
+.main-element .student-info table {
+  text-align: center;
+  width: 100%;
+  background-color: black;
+}
+.main-element .student-info table tr {
+  background-color: white;
+}
+.main-element .student-info table th,
+td {
+  padding: 5px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+}

@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #90f375 0%, #a93ab5 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px 50px;
+  width: 100%;
+  max-width: 720px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #111;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #222;
+}
+
+.input-text,
+.input-email,
+.input-tel,
+.input-password,
+.input-date,
+.select-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.input-text:focus,
+.input-email:focus,
+.input-tel:focus,
+.input-password:focus,
+.input-date:focus,
+.select-field:focus,
+.textarea-field:focus {
+  border-color: #4a90d9;
+}
+
+.textarea-field {
+  resize: vertical;
+  height: 90px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.radio-group label,
+.checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.radio-group .input-radio,
+.checkbox-group .input-checkbox {
+  width: auto;
+  cursor: pointer;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.btn {
+  padding: 10px 32px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-submit {
+  background: #3d6de0;
+  color: #fff;
+}
+
+.btn-reset {
+  background: #888;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}

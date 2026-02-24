@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="form-container">
+      <h1>Student Registration Form</h1>
+
+      <div class="form-group">
+        <label class="form-label" for="studentName">Student Name</label>
+        <input
+          class="input-field input-text"
+          type="text"
+          id="studentName"
+          placeholder="Enter your name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="studentID">Student ID</label>
+        <input
+          class="input-field input-text"
+          type="text"
+          id="studentID"
+          placeholder="Enter your ID"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input
+          class="input-field input-email"
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="phone">Phone</label>
+        <input
+          class="input-field input-tel"
+          type="tel"
+          id="phone"
+          placeholder="Enter phone number"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="department">Department</label>
+        <select class="select-field" id="department">
+          <option value="">-- Select Department --</option>
+          <option value="CSE">CSE</option>
+          <option value="EEE">EEE</option>
+          <option value="BBA">BBA</option>
+          <option value="English">English</option>
+          <option value="Law">Law</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Gender</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input
+              class="input-radio"
+              type="radio"
+              name="gender"
+              value="Male"
+            />
+            Male
+          </label>
+          <label class="radio-label">
+            <input
+              class="input-radio"
+              type="radio"
+              name="gender"
+              value="Female"
+            />
+            Female
+          </label>
+          <label class="radio-label">
+            <input
+              class="input-radio"
+              type="radio"
+              name="gender"
+              value="Other"
+            />
+            Other
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">Skills</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input class="input-checkbox" type="checkbox" value="HTML" />
+            HTML
+          </label>
+          <label class="checkbox-label">
+            <input class="input-checkbox" type="checkbox" value="CSS" />
+            CSS
+          </label>
+          <label class="checkbox-label">
+            <input class="input-checkbox" type="checkbox" value="JavaScript" />
+            JavaScript
+          </label>
+          <label class="checkbox-label">
+            <input class="input-checkbox" type="checkbox" value="Python" />
+            Python
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="address">Address</label>
+        <textarea
+          class="textarea-field"
+          id="address"
+          placeholder="Enter your address"
+        ></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input
+          class="input-field input-password"
+          type="password"
+          id="password"
+          placeholder="Create password"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="dob">Date of Birth</label>
+        <input class="input-field input-date" type="date" id="dob" />
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-submit" type="submit" onclick="handleSubmit()">
+          Submit
+        </button>
+        <button class="btn btn-reset" type="reset" onclick="handleReset()">
+          Reset
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
