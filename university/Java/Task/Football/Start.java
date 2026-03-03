@@ -5,6 +5,8 @@ public class Start{
 
         p1.setSalary(50000);
         p2.setSalary(60000);
+        p1.showInfo();
+        p2.showInfo();
 
        System.out.println("Salaray of Messi is : " +p1.getSalary());
        System.out.println("Salaray of Ronaldo is : " +p2.getSalary());
