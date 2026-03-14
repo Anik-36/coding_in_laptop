@@ -11,7 +11,9 @@ int main(){
 
     // char g[] = "hello world";
     // printf("%d",sizeof(g));
-    int a[7];
-    printf("%d",sizeof(a));
+    // int a[7];
+    // printf("%d",sizeof(a));
+
+    printf("Hello world");
     return 0;
 }
