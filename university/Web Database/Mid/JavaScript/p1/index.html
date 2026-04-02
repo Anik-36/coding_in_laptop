@@ -9,15 +9,16 @@
     <h1>Find the value of Parameter of circle</h1>
     <label id="v" for="">Value</label>
     <input id="value" type="number" name="" id="" />
-    <button onclick="parameter()">Find</button>
+    <button id="click">Find</button>
     <p id="result">Result</p>
     <script>
-      function parameter() {
-        document.getElementById("v").textContent = "Mashroor";
-        const radius = document.getElementById("value").value;
-        let p = 2 * 3.1416 * radius;
-        document.getElementById("result").innerHTML = "Result : " + p;
-      }
+      document
+        .getElementById("click")
+        .addEventListener("click", function parameter() {
+          const radius = document.getElementById("value").value;
+          let p = 2 * 3.1416 * radius;
+          document.getElementById("result").innerHTML = "Result : " + p;
+        });
     </script>
   </body>
 </html>
