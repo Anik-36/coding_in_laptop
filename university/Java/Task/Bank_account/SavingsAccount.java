@@ -1,6 +1,6 @@
 package university.Java.Task.Bank_account;
 
-public class SavingsAccount extends Account {
+abstract class SavingsAccount extends Account {
     private double interestRate;
     SavingsAccount(){
         super();
